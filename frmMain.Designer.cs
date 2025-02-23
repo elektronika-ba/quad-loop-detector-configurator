@@ -30,20 +30,20 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea7 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend7 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea8 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend8 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea9 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend9 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea10 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend10 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.lbMenu = new System.Windows.Forms.ListBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -234,6 +234,7 @@
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
             this.pnlEventViewer = new System.Windows.Forms.Panel();
+            this.ckEventViewerSaveToSQLite = new System.Windows.Forms.CheckBox();
             this.lblLastJointEventCD = new System.Windows.Forms.Label();
             this.lblLastEventLoopD = new System.Windows.Forms.Label();
             this.lblLastEventLoopC = new System.Windows.Forms.Label();
@@ -278,6 +279,8 @@
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.lblSlowStartupTmr = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
+            this.uctbRuntimeRecalibTmr = new QLDConfig1v2.ucTrackBar();
+            this.uctbSlowStartupTimer = new QLDConfig1v2.ucTrackBar();
             this.uctbRelayDDelayAct = new QLDConfig1v2.ucTrackBar();
             this.uctbRelayDPulseExtended = new QLDConfig1v2.ucTrackBar();
             this.uctbRelayDPulseNormal = new QLDConfig1v2.ucTrackBar();
@@ -292,8 +295,6 @@
             this.uctbRelayAPulseNormal = new QLDConfig1v2.ucTrackBar();
             this.uctbSensitivityUndetectThreshold = new QLDConfig1v2.ucTrackBar();
             this.uctbSensitivityDetectThreshold = new QLDConfig1v2.ucTrackBar();
-            this.uctbRuntimeRecalibTmr = new QLDConfig1v2.ucTrackBar();
-            this.uctbSlowStartupTimer = new QLDConfig1v2.ucTrackBar();
             this.uctbFilteringAveraging = new QLDConfig1v2.ucTrackBar();
             this.uctbFilteringPositive = new QLDConfig1v2.ucTrackBar();
             this.uctbFilteringNegative = new QLDConfig1v2.ucTrackBar();
@@ -1592,10 +1593,10 @@
             this.chartFreqVsSens.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            chartArea1.Name = "ChartArea1";
-            this.chartFreqVsSens.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chartFreqVsSens.Legends.Add(legend1);
+            chartArea6.Name = "ChartArea1";
+            this.chartFreqVsSens.ChartAreas.Add(chartArea6);
+            legend6.Name = "Legend1";
+            this.chartFreqVsSens.Legends.Add(legend6);
             this.chartFreqVsSens.Location = new System.Drawing.Point(290, 173);
             this.chartFreqVsSens.Name = "chartFreqVsSens";
             this.chartFreqVsSens.Size = new System.Drawing.Size(426, 456);
@@ -2536,6 +2537,7 @@
             // 
             // pnlEventViewer
             // 
+            this.pnlEventViewer.Controls.Add(this.ckEventViewerSaveToSQLite);
             this.pnlEventViewer.Controls.Add(this.lblLastJointEventCD);
             this.pnlEventViewer.Controls.Add(this.lblLastEventLoopD);
             this.pnlEventViewer.Controls.Add(this.lblLastEventLoopC);
@@ -2554,6 +2556,17 @@
             this.pnlEventViewer.Size = new System.Drawing.Size(728, 639);
             this.pnlEventViewer.TabIndex = 14;
             this.pnlEventViewer.Tag = "9";
+            // 
+            // ckEventViewerSaveToSQLite
+            // 
+            this.ckEventViewerSaveToSQLite.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.ckEventViewerSaveToSQLite.AutoSize = true;
+            this.ckEventViewerSaveToSQLite.Location = new System.Drawing.Point(9, 607);
+            this.ckEventViewerSaveToSQLite.Name = "ckEventViewerSaveToSQLite";
+            this.ckEventViewerSaveToSQLite.Size = new System.Drawing.Size(133, 17);
+            this.ckEventViewerSaveToSQLite.TabIndex = 21;
+            this.ckEventViewerSaveToSQLite.Text = "Save events to SQLite";
+            this.ckEventViewerSaveToSQLite.UseVisualStyleBackColor = true;
             // 
             // lblLastJointEventCD
             // 
@@ -2742,17 +2755,17 @@
             // 
             // chAnalysisLoopA
             // 
-            chartArea2.Name = "ChartArea1";
-            this.chAnalysisLoopA.ChartAreas.Add(chartArea2);
+            chartArea7.Name = "ChartArea1";
+            this.chAnalysisLoopA.ChartAreas.Add(chartArea7);
             this.chAnalysisLoopA.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend2.Name = "Legend1";
-            this.chAnalysisLoopA.Legends.Add(legend2);
+            legend7.Name = "Legend1";
+            this.chAnalysisLoopA.Legends.Add(legend7);
             this.chAnalysisLoopA.Location = new System.Drawing.Point(3, 3);
             this.chAnalysisLoopA.Name = "chAnalysisLoopA";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chAnalysisLoopA.Series.Add(series1);
+            series5.ChartArea = "ChartArea1";
+            series5.Legend = "Legend1";
+            series5.Name = "Series1";
+            this.chAnalysisLoopA.Series.Add(series5);
             this.chAnalysisLoopA.Size = new System.Drawing.Size(346, 247);
             this.chAnalysisLoopA.TabIndex = 13;
             this.chAnalysisLoopA.Text = "LOOP A";
@@ -2760,17 +2773,17 @@
             // 
             // chAnalysisLoopB
             // 
-            chartArea3.Name = "ChartArea1";
-            this.chAnalysisLoopB.ChartAreas.Add(chartArea3);
+            chartArea8.Name = "ChartArea1";
+            this.chAnalysisLoopB.ChartAreas.Add(chartArea8);
             this.chAnalysisLoopB.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend3.Name = "Legend1";
-            this.chAnalysisLoopB.Legends.Add(legend3);
+            legend8.Name = "Legend1";
+            this.chAnalysisLoopB.Legends.Add(legend8);
             this.chAnalysisLoopB.Location = new System.Drawing.Point(365, 3);
             this.chAnalysisLoopB.Name = "chAnalysisLoopB";
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.chAnalysisLoopB.Series.Add(series2);
+            series6.ChartArea = "ChartArea1";
+            series6.Legend = "Legend1";
+            series6.Name = "Series1";
+            this.chAnalysisLoopB.Series.Add(series6);
             this.chAnalysisLoopB.Size = new System.Drawing.Size(346, 247);
             this.chAnalysisLoopB.TabIndex = 14;
             this.chAnalysisLoopB.Text = "LOOP B";
@@ -2778,34 +2791,34 @@
             // 
             // chAnalysisLoopC
             // 
-            chartArea4.Name = "ChartArea1";
-            this.chAnalysisLoopC.ChartAreas.Add(chartArea4);
+            chartArea9.Name = "ChartArea1";
+            this.chAnalysisLoopC.ChartAreas.Add(chartArea9);
             this.chAnalysisLoopC.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend4.Name = "Legend1";
-            this.chAnalysisLoopC.Legends.Add(legend4);
+            legend9.Name = "Legend1";
+            this.chAnalysisLoopC.Legends.Add(legend9);
             this.chAnalysisLoopC.Location = new System.Drawing.Point(3, 306);
             this.chAnalysisLoopC.Name = "chAnalysisLoopC";
-            series3.ChartArea = "ChartArea1";
-            series3.Legend = "Legend1";
-            series3.Name = "Series1";
-            this.chAnalysisLoopC.Series.Add(series3);
+            series7.ChartArea = "ChartArea1";
+            series7.Legend = "Legend1";
+            series7.Name = "Series1";
+            this.chAnalysisLoopC.Series.Add(series7);
             this.chAnalysisLoopC.Size = new System.Drawing.Size(346, 247);
             this.chAnalysisLoopC.TabIndex = 19;
             this.chAnalysisLoopC.Text = "LOOP B";
             // 
             // chAnalysisLoopD
             // 
-            chartArea5.Name = "ChartArea1";
-            this.chAnalysisLoopD.ChartAreas.Add(chartArea5);
+            chartArea10.Name = "ChartArea1";
+            this.chAnalysisLoopD.ChartAreas.Add(chartArea10);
             this.chAnalysisLoopD.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend5.Name = "Legend1";
-            this.chAnalysisLoopD.Legends.Add(legend5);
+            legend10.Name = "Legend1";
+            this.chAnalysisLoopD.Legends.Add(legend10);
             this.chAnalysisLoopD.Location = new System.Drawing.Point(365, 306);
             this.chAnalysisLoopD.Name = "chAnalysisLoopD";
-            series4.ChartArea = "ChartArea1";
-            series4.Legend = "Legend1";
-            series4.Name = "Series1";
-            this.chAnalysisLoopD.Series.Add(series4);
+            series8.ChartArea = "ChartArea1";
+            series8.Legend = "Legend1";
+            series8.Name = "Series1";
+            this.chAnalysisLoopD.Series.Add(series8);
             this.chAnalysisLoopD.Size = new System.Drawing.Size(346, 247);
             this.chAnalysisLoopD.TabIndex = 22;
             this.chAnalysisLoopD.Text = "LOOP B";
@@ -3064,6 +3077,40 @@
             this.label35.Text = "misc options";
             this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // uctbRuntimeRecalibTmr
+            // 
+            this.uctbRuntimeRecalibTmr.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.uctbRuntimeRecalibTmr.LargeChange = 5;
+            this.uctbRuntimeRecalibTmr.Location = new System.Drawing.Point(9, 47);
+            this.uctbRuntimeRecalibTmr.Maximum = 255;
+            this.uctbRuntimeRecalibTmr.Minimum = 1;
+            this.uctbRuntimeRecalibTmr.Name = "uctbRuntimeRecalibTmr";
+            this.uctbRuntimeRecalibTmr.Size = new System.Drawing.Size(694, 69);
+            this.uctbRuntimeRecalibTmr.SmallChange = 1;
+            this.uctbRuntimeRecalibTmr.TabIndex = 11;
+            this.uctbRuntimeRecalibTmr.Tag = "UPDATE_CONFIG_PACKET";
+            this.uctbRuntimeRecalibTmr.TickFrequency = 5;
+            this.uctbRuntimeRecalibTmr.Value = 1;
+            this.uctbRuntimeRecalibTmr.TrackbarChanged += new System.EventHandler(this.uctbRuntimeRecalibTmr_TrackbarChanged);
+            // 
+            // uctbSlowStartupTimer
+            // 
+            this.uctbSlowStartupTimer.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.uctbSlowStartupTimer.LargeChange = 5;
+            this.uctbSlowStartupTimer.Location = new System.Drawing.Point(10, 44);
+            this.uctbSlowStartupTimer.Maximum = 255;
+            this.uctbSlowStartupTimer.Minimum = 1;
+            this.uctbSlowStartupTimer.Name = "uctbSlowStartupTimer";
+            this.uctbSlowStartupTimer.Size = new System.Drawing.Size(694, 69);
+            this.uctbSlowStartupTimer.SmallChange = 1;
+            this.uctbSlowStartupTimer.TabIndex = 9;
+            this.uctbSlowStartupTimer.Tag = "UPDATE_CONFIG_PACKET";
+            this.uctbSlowStartupTimer.TickFrequency = 5;
+            this.uctbSlowStartupTimer.Value = 1;
+            this.uctbSlowStartupTimer.TrackbarChanged += new System.EventHandler(this.uctbSlowStartupTimer_TrackbarChanged);
+            // 
             // uctbRelayDDelayAct
             // 
             this.uctbRelayDDelayAct.LargeChange = 5;
@@ -3275,40 +3322,6 @@
             this.uctbSensitivityDetectThreshold.Tag = "UPDATE_CONFIG_PACKET";
             this.uctbSensitivityDetectThreshold.TickFrequency = 10;
             this.uctbSensitivityDetectThreshold.Value = 1;
-            // 
-            // uctbRuntimeRecalibTmr
-            // 
-            this.uctbRuntimeRecalibTmr.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.uctbRuntimeRecalibTmr.LargeChange = 5;
-            this.uctbRuntimeRecalibTmr.Location = new System.Drawing.Point(9, 47);
-            this.uctbRuntimeRecalibTmr.Maximum = 255;
-            this.uctbRuntimeRecalibTmr.Minimum = 1;
-            this.uctbRuntimeRecalibTmr.Name = "uctbRuntimeRecalibTmr";
-            this.uctbRuntimeRecalibTmr.Size = new System.Drawing.Size(694, 69);
-            this.uctbRuntimeRecalibTmr.SmallChange = 1;
-            this.uctbRuntimeRecalibTmr.TabIndex = 11;
-            this.uctbRuntimeRecalibTmr.Tag = "UPDATE_CONFIG_PACKET";
-            this.uctbRuntimeRecalibTmr.TickFrequency = 5;
-            this.uctbRuntimeRecalibTmr.Value = 1;
-            this.uctbRuntimeRecalibTmr.TrackbarChanged += new System.EventHandler(this.uctbRuntimeRecalibTmr_TrackbarChanged);
-            // 
-            // uctbSlowStartupTimer
-            // 
-            this.uctbSlowStartupTimer.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.uctbSlowStartupTimer.LargeChange = 5;
-            this.uctbSlowStartupTimer.Location = new System.Drawing.Point(10, 44);
-            this.uctbSlowStartupTimer.Maximum = 255;
-            this.uctbSlowStartupTimer.Minimum = 1;
-            this.uctbSlowStartupTimer.Name = "uctbSlowStartupTimer";
-            this.uctbSlowStartupTimer.Size = new System.Drawing.Size(694, 69);
-            this.uctbSlowStartupTimer.SmallChange = 1;
-            this.uctbSlowStartupTimer.TabIndex = 9;
-            this.uctbSlowStartupTimer.Tag = "UPDATE_CONFIG_PACKET";
-            this.uctbSlowStartupTimer.TickFrequency = 5;
-            this.uctbSlowStartupTimer.Value = 1;
-            this.uctbSlowStartupTimer.TrackbarChanged += new System.EventHandler(this.uctbSlowStartupTimer_TrackbarChanged);
             // 
             // uctbFilteringAveraging
             // 
@@ -3566,13 +3579,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(952, 742);
+            this.Controls.Add(this.pnlEventViewer);
             this.Controls.Add(this.pnlMiscOptions);
             this.Controls.Add(this.pnlRelayPulseDurations);
             this.Controls.Add(this.pnlOperatingMode);
             this.Controls.Add(this.pnlSensitivity);
             this.Controls.Add(this.pnlFilteringLevels);
             this.Controls.Add(this.pnlSignalAnalysis);
-            this.Controls.Add(this.pnlEventViewer);
             this.Controls.Add(this.pnlDCDD);
             this.Controls.Add(this.pnlDetectStop);
             this.Controls.Add(this.pnlSamplingSpeed);
@@ -3586,7 +3599,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Quad Channel Inductive Loop Vehicle Detector - www.elektronika.ba";
+            this.Text = "Quad Channel Inductive Loop Vehicle Detector (v$) - www.elektronika.ba";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmMain_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmMain_FormClosed);
             this.Load += new System.EventHandler(this.frmMain_Load);
@@ -3942,6 +3955,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.CheckBox ckEventViewerSaveToSQLite;
     }
 }
 

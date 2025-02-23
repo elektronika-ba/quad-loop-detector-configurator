@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SQLite;
 
 /**
  * Note: References for speed measurement config are still in here,
@@ -34,6 +35,8 @@ namespace QLDConfig1v2
         private const string crlf = "\r\n";
 
         private string saveAnalysisFolder = "";
+
+        private SQLiteConnection sqliteConn = new SQLiteConnection("Data Source=event_logger.db;Version=3");
 
         private enum TRXState
         {
@@ -988,10 +991,53 @@ namespace QLDConfig1v2
 
         private void frmMain_Load(object sender, EventArgs e)
         {
+            System.Reflection.Assembly assembly = System.Reflection.Assembly.GetExecutingAssembly();
+            string strVersion = assembly.GetName().Version.Major.ToString() + "." + assembly.GetName().Version.Minor.ToString();
+            this.Text = this.Text.Replace("$", strVersion);
+
             lbMenu.SelectedIndex = 0; // this will tigger lbMenu_SelectedIndexChanged
 
             // put default config packet to screen
             configPacketToScreen();
+
+            // try to initialize SQLite database (within 2 seconds max)
+            ckEventViewerSaveToSQLite.Enabled = false;
+            try
+            {
+                Stopwatch sw = new Stopwatch();
+                sqliteConn.Open();
+                sw.Restart();
+                while (sqliteConn.State != System.Data.ConnectionState.Open)
+                {
+                    // I am not happy with this, but...
+                    Application.DoEvents();
+
+                    if (sw.Elapsed.TotalSeconds >= 2) break;
+                }
+                sw.Stop();
+
+                if(sqliteConn.State != System.Data.ConnectionState.Open)
+                {
+                    throw new Exception();
+                }
+
+                // make sure there is "event_log" table in the DB
+                SQLiteCommand command = sqliteConn.CreateCommand();
+                command.CommandText = "SELECT name FROM sqlite_master WHERE name='event_log'";
+                var name = command.ExecuteScalar();
+                if (name == null || name.ToString() != "event_log")
+                {
+                    command.CommandText = "CREATE TABLE event_log (id INTEGER PRIMARY KEY AUTOINCREMENT, event_id INTEGER, event_group_id INTEGER, event_param TEXT, event_description TEXT, event_timestamp TEXT, event_unix_timestamp INTEGER)";
+                    command.ExecuteNonQuery();
+                }
+
+                ckEventViewerSaveToSQLite.Enabled = true;
+            }
+            catch (Exception)
+            {
+                sqliteConn = null;
+                MessageBox.Show("Failure with SQLite functions. SQLite logging will not be available.", "SQLite");
+            }
         }
 
         private void ucTrackBar1_TrackbarChanged(object sender, EventArgs e)
@@ -1517,6 +1563,41 @@ namespace QLDConfig1v2
             txtLog.AppendText(txt + Environment.NewLine);
         }
 
+        private void addEventToSQLite(int eventId, string eventParam, int eventGroupId, string eventDescription)
+        {
+            if (sqliteConn == null)
+            {
+                ckEventViewerSaveToSQLite.Checked = false;
+                ckEventViewerSaveToSQLite.Enabled = false;
+                return;
+            }
+
+            // insert the event
+            try
+            {
+                string sql_insert = "INSERT INTO event_log (event_id, event_group_id, event_param, event_description, event_timestamp, event_unix_timestamp) VALUES (@event_id, @event_group_id, @event_param, @event_description, @event_timestamp, @event_unix_timestamp)";
+                using (SQLiteCommand cmd = new SQLiteCommand(sql_insert, sqliteConn))
+                {
+                    cmd.Parameters.AddWithValue("@event_id", eventId);
+                    cmd.Parameters.AddWithValue("@event_group_id", eventGroupId);
+                    cmd.Parameters.AddWithValue("@event_param", eventParam);
+                    cmd.Parameters.AddWithValue("@event_description", eventDescription);
+                    cmd.Parameters.AddWithValue("@event_timestamp", DateTime.UtcNow.ToString("yyyy-MM-ddTHH:mm:ss.fffZ"));
+
+                    DateTime utcNow = DateTime.UtcNow;
+                    DateTime unixEpoch = new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc);
+                    long unixTimestamp = (long)(utcNow - unixEpoch).TotalSeconds;
+                    cmd.Parameters.AddWithValue("@event_unix_timestamp", unixTimestamp);
+
+                    cmd.ExecuteNonQuery();
+                }
+            }
+            catch (SQLiteException e)
+            {
+                addToEventLog(e.Message.Replace("\n", " "), "[# SQLite Error]");
+            }
+        }
+
         private void processCommand(string cmd)
         {
             if (string.IsNullOrEmpty(cmd)) return;
@@ -1714,12 +1795,14 @@ namespace QLDConfig1v2
                             {
                                 lblLastJointEventAB.Text = lblLastJointEventAB.Tag.ToString().Replace("%", ev);
                                 addToEventLog(ev, "[A+B]");
+                                if (ckEventViewerSaveToSQLite.Checked) addEventToSQLite(eventId, eventParam, loopId, "[A+B] " + ev);
                             }
                             // CD group
                             else
                             {
                                 lblLastJointEventCD.Text = lblLastJointEventCD.Tag.ToString().Replace("%", ev);
                                 addToEventLog(ev, "[C+D]");
+                                if (ckEventViewerSaveToSQLite.Checked) addEventToSQLite(eventId, eventParam, loopId, "[C+D] " + ev);
                             }
                         }
                         else
@@ -1729,24 +1812,28 @@ namespace QLDConfig1v2
                                 lblLastEventLoopA.Text = lblLastEventLoopA.Tag.ToString().Replace("%", ev);
                                 // log to window
                                 addToEventLog(ev, "[LOOP A]");
+                                if (ckEventViewerSaveToSQLite.Checked) addEventToSQLite(eventId, eventParam, loopId, "[LOOP A] " + ev);
                             }
                             else if (loopId == 1)
                             {
                                 lblLastEventLoopB.Text = lblLastEventLoopB.Tag.ToString().Replace("%", ev);
                                 // log to window
                                 addToEventLog(ev, "[LOOP B]");
+                                if (ckEventViewerSaveToSQLite.Checked) addEventToSQLite(eventId, eventParam, loopId, "[LOOP B] " + ev);
                             }
                             else if (loopId == 2)
                             {
                                 lblLastEventLoopC.Text = lblLastEventLoopC.Tag.ToString().Replace("%", ev);
                                 // log to window
                                 addToEventLog(ev, "[LOOP C]");
+                                if (ckEventViewerSaveToSQLite.Checked) addEventToSQLite(eventId, eventParam, loopId, "[LOOP C] " + ev);
                             }
                             else if (loopId == 3)
                             {
                                 lblLastEventLoopD.Text = lblLastEventLoopD.Tag.ToString().Replace("%", ev);
                                 // log to window
                                 addToEventLog(ev, "[LOOP D]");
+                                if (ckEventViewerSaveToSQLite.Checked) addEventToSQLite(eventId, eventParam, loopId, "[LOOP D] " + ev);
                             }
                         }
                     }
@@ -2205,6 +2292,11 @@ namespace QLDConfig1v2
             if(sp.IsOpen)
             {
                 sp.Close();
+            }
+
+            if (sqliteConn != null && sqliteConn.State != System.Data.ConnectionState.Closed)
+            {
+                sqliteConn.Close();
             }
         }
 
