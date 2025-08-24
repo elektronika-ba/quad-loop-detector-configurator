@@ -53,7 +53,8 @@ namespace QLDConfig1v2
             set
             {
                 tb.Maximum = value;
-                lbl.Text = tb.Value + "/" + tb.Maximum;
+                lblR.Text = tb.Value + "/" + tb.Maximum;
+                lblL.Text = tb.Value + "/" + tb.Maximum;
             }
         }
 
@@ -118,7 +119,8 @@ namespace QLDConfig1v2
             set
             {
                 tb.Value = value;
-                lbl.Text = tb.Value + "/" + tb.Maximum;
+                lblR.Text = tb.Value + "/" + tb.Maximum;
+                lblL.Text = tb.Value + "/" + tb.Maximum;
             }
         }
 
@@ -132,7 +134,8 @@ namespace QLDConfig1v2
 
         private void tb_Scroll(object sender, EventArgs e)
         {
-            lbl.Text = tb.Value + "/" + tb.Maximum;
+            lblR.Text = tb.Value + "/" + tb.Maximum;
+            lblL.Text = tb.Value + "/" + tb.Maximum;
             if (TrackbarChanged != null)
             {
                 TrackbarChanged(sender, e);

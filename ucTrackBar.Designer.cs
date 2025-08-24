@@ -29,7 +29,8 @@
         private void InitializeComponent()
         {
             this.tb = new System.Windows.Forms.TrackBar();
-            this.lbl = new System.Windows.Forms.Label();
+            this.lblR = new System.Windows.Forms.Label();
+            this.lblL = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.tb)).BeginInit();
             this.SuspendLayout();
             // 
@@ -43,21 +44,31 @@
             this.tb.TabIndex = 0;
             this.tb.Scroll += new System.EventHandler(this.tb_Scroll);
             // 
-            // lbl
+            // lblR
             // 
-            this.lbl.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbl.Location = new System.Drawing.Point(3, 0);
-            this.lbl.Name = "lbl";
-            this.lbl.Size = new System.Drawing.Size(368, 23);
-            this.lbl.TabIndex = 1;
-            this.lbl.Text = "?/?";
-            this.lbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblR.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblR.Location = new System.Drawing.Point(217, 0);
+            this.lblR.Name = "lblR";
+            this.lblR.Size = new System.Drawing.Size(154, 23);
+            this.lblR.TabIndex = 1;
+            this.lblR.Text = "?/?";
+            this.lblR.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // lblL
+            // 
+            this.lblL.Location = new System.Drawing.Point(0, 0);
+            this.lblL.Name = "lblL";
+            this.lblL.Size = new System.Drawing.Size(158, 23);
+            this.lblL.TabIndex = 2;
+            this.lblL.Text = "?/?";
+            this.lblL.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // ucTrackBar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.lbl);
+            this.Controls.Add(this.lblL);
+            this.Controls.Add(this.lblR);
             this.Controls.Add(this.tb);
             this.Name = "ucTrackBar";
             this.Size = new System.Drawing.Size(371, 71);
@@ -70,6 +81,7 @@
         #endregion
 
         private System.Windows.Forms.TrackBar tb;
-        private System.Windows.Forms.Label lbl;
+        private System.Windows.Forms.Label lblR;
+        private System.Windows.Forms.Label lblL;
     }
 }
