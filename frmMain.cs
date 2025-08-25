@@ -1063,59 +1063,68 @@ namespace QLDConfig1v2
 
         private void tmrSensitivitiesExampleGenerator_Tick(object sender, EventArgs e)
         {
-            chartFreqVsSens.Series.Clear();
-            var seriesChart = new System.Windows.Forms.DataVisualization.Charting.Series
-            {
-                Name = "FrequencyVsSensitivity",
-                Color = System.Drawing.Color.Green,
-                IsVisibleInLegend = false,
-                IsXValueIndexed = true,
-                BorderWidth = 3,
-                ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line
-            };
-
-            chartFreqVsSens.Series.Add(seriesChart);
-
             tmrSensitivitiesExampleGenerator.Enabled = false;
-            tblSensitivityExamples.Rows.Clear();
-            for (double freq = 20; freq <= 200; freq += 5)
+
+            try
             {
-                DataGridViewRow r = new DataGridViewRow();
-
-                DataGridViewTextBoxCell c1 = new DataGridViewTextBoxCell();
-                c1.Value = freq;
-                r.Cells.Add(c1);
-
-                DataGridViewTextBoxCell c2 = new DataGridViewTextBoxCell();
-                double bps = calcFreqResolution(freq, uctbSamplingSpeed.Value);
-                if (bps == -1)
+                chartFreqVsSens.Series.Clear();
+                var seriesChart = new System.Windows.Forms.DataVisualization.Charting.Series
                 {
-                    c2.Value = "Freq. too low!";
-                }
-                else
-                {
-                    c2.Value = bps.ToString("0.00");
-                }
-                r.Cells.Add(c2);
+                    Name = "FrequencyVsSensitivity",
+                    Color = System.Drawing.Color.Green,
+                    IsVisibleInLegend = false,
+                    IsXValueIndexed = true,
+                    BorderWidth = 3,
+                    ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line
+                };
 
-                if (bps > 0)
+                chartFreqVsSens.Series.Add(seriesChart);
+
+                tblSensitivityExamples.Rows.Clear();
+                for (double freq = 20; freq <= 200; freq += 5)
                 {
-                    seriesChart.Points.AddXY(freq, bps);
+                    DataGridViewRow r = new DataGridViewRow();
+
+                    DataGridViewTextBoxCell c1 = new DataGridViewTextBoxCell();
+                    c1.Value = freq;
+                    r.Cells.Add(c1);
+
+                    DataGridViewTextBoxCell c2 = new DataGridViewTextBoxCell();
+                    double bps = calcFreqResolution(freq, uctbSamplingSpeed.Value);
+                    if (bps == -1)
+                    {
+                        c2.Value = "Freq. too low!";
+                    }
+                    else
+                    {
+                        c2.Value = bps.ToString("0.00");
+                    }
+                    r.Cells.Add(c2);
+
+                    if (bps > 0)
+                    {
+                        seriesChart.Points.AddXY(freq, bps);
+                    }
+
+                    tblSensitivityExamples.Rows.Add(r);
                 }
 
-                tblSensitivityExamples.Rows.Add(r);
+                chartFreqVsSens.Invalidate();
+
+                // trigger all components that depend on us to recalculate their stuff
+                List<Control> c2check = findControlRecursively(this, "TMR1BEST_CHANGE");
+                foreach (Control c in c2check)
+                {
+                    if (c is ucTrackBar)
+                    {
+                        ((ucTrackBar)c).TriggerChange(null, null);
+                    }
+                }
             }
-
-            chartFreqVsSens.Invalidate();
-
-            // trigger all components that depend on us to recalculate their stuff
-            List<Control> c2check = findControlRecursively(this, "TMR1BEST_CHANGE");
-            foreach (Control c in c2check)
+            catch(Exception)
             {
-                if (c is ucTrackBar)
-                {
-                    ((ucTrackBar)c).TriggerChange(null, null);
-                }
+                // die silently this time
+                // https://stackoverflow.com/questions/34344499/invalidoperationexception-this-operation-cannot-be-performed-while-an-auto-fill
             }
         }
 
@@ -1297,7 +1306,7 @@ namespace QLDConfig1v2
 
         private void uctbSpeedDistance_TrackbarChanged(object sender, EventArgs e)
         {
-            string info = lblSpeedLoopDistance.Tag.ToString();
+            /*string info = lblSpeedLoopDistance.Tag.ToString();
             string sinfo;
             int distcm = uctbSpeedDistance.Value;
 
@@ -1322,7 +1331,7 @@ namespace QLDConfig1v2
             // (re)start timer to (re)calculate maximum possible speed
             tmrSpeedTrapErrorGenerator.Stop();
             tmrSpeedTrapErrorGenerator.Start();
-            tmrSpeedTrapErrorGenerator.Enabled = true;
+            tmrSpeedTrapErrorGenerator.Enabled = true;*/
         }
 
         private void cbSensitivityForBank_SelectedIndexChanged(object sender, EventArgs e)
@@ -2397,7 +2406,7 @@ namespace QLDConfig1v2
 
         private void tmrSpeedTrapErrorGenerator_Tick(object sender, EventArgs e)
         {
-            tmrSpeedTrapErrorGenerator.Enabled = false;
+            /*tmrSpeedTrapErrorGenerator.Enabled = false;
             tblMaximumSpeedErrors.Rows.Clear();
 
             double samplingSpeedSeconds = ((1.0 / _TMR1_FREQ) * uctbSamplingSpeed.Value);
@@ -2434,7 +2443,7 @@ namespace QLDConfig1v2
                 r.Cells.Add(c4);
 
                 tblMaximumSpeedErrors.Rows.Add(r);
-            }
+            }*/
         }
 
         private void cbQuickPresets_SelectedIndexChanged(object sender, EventArgs e)

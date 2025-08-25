@@ -159,7 +159,6 @@
             this.Frequency = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Sensitivity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lblTmr1SamplingSpeed = new System.Windows.Forms.Label();
-            this.uctbSamplingSpeed = new QLDConfig1v2.ucTrackBar();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.tmrSensitivitiesExampleGenerator = new System.Windows.Forms.Timer(this.components);
@@ -174,20 +173,15 @@
             this.label10 = new System.Windows.Forms.Label();
             this.cbSensitivityA = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.uctbSensitivityUndetectThreshold = new QLDConfig1v2.ucTrackBar();
             this.label9 = new System.Windows.Forms.Label();
-            this.uctbSensitivityDetectThreshold = new QLDConfig1v2.ucTrackBar();
             this.label8 = new System.Windows.Forms.Label();
             this.cbSensitivityForBank = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.pnlFilteringLevels = new System.Windows.Forms.Panel();
             this.label17 = new System.Windows.Forms.Label();
-            this.uctbFilteringAveraging = new QLDConfig1v2.ucTrackBar();
             this.lblFilteringPositive = new System.Windows.Forms.Label();
-            this.uctbFilteringPositive = new QLDConfig1v2.ucTrackBar();
             this.lblFilteringNegative = new System.Windows.Forms.Label();
-            this.uctbFilteringNegative = new QLDConfig1v2.ucTrackBar();
             this.cbFilteringLevel = new System.Windows.Forms.ComboBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
@@ -195,57 +189,35 @@
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.lblRelayDDelayAct = new System.Windows.Forms.Label();
             this.lblRelayDPulseNormal = new System.Windows.Forms.Label();
-            this.uctbRelayDDelayAct = new QLDConfig1v2.ucTrackBar();
-            this.uctbRelayDPulseExtended = new QLDConfig1v2.ucTrackBar();
-            this.uctbRelayDPulseNormal = new QLDConfig1v2.ucTrackBar();
             this.lblRelayDPulseExtended = new System.Windows.Forms.Label();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.lblRelayCDelayAct = new System.Windows.Forms.Label();
             this.lblRelayCPulseNormal = new System.Windows.Forms.Label();
-            this.uctbRelayCDelayAct = new QLDConfig1v2.ucTrackBar();
-            this.uctbRelayCPulseExtended = new QLDConfig1v2.ucTrackBar();
-            this.uctbRelayCPulseNormal = new QLDConfig1v2.ucTrackBar();
             this.lblRelayCPulseExtended = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.lblRelayBDelayAct = new System.Windows.Forms.Label();
-            this.uctbRelayBDelayAct = new QLDConfig1v2.ucTrackBar();
             this.lblRelayBPulseNormal = new System.Windows.Forms.Label();
-            this.uctbRelayBPulseExtended = new QLDConfig1v2.ucTrackBar();
-            this.uctbRelayBPulseNormal = new QLDConfig1v2.ucTrackBar();
             this.lblRelayBPulseExtended = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.lblRelayADelayAct = new System.Windows.Forms.Label();
-            this.uctbRelayADelayAct = new QLDConfig1v2.ucTrackBar();
             this.lblRelayAPulseNormal = new System.Windows.Forms.Label();
-            this.uctbRelayAPulseExtended = new QLDConfig1v2.ucTrackBar();
-            this.uctbRelayAPulseNormal = new QLDConfig1v2.ucTrackBar();
             this.lblRelayAPulseExtended = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.pnlPPC = new System.Windows.Forms.Panel();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.uctbPPCDetLeftThreshold = new QLDConfig1v2.ucTrackBar();
             this.label21 = new System.Windows.Forms.Label();
-            this.uctbPPCDetLeftTimer = new QLDConfig1v2.ucTrackBar();
             this.lblPPCDetLeaveTimer = new System.Windows.Forms.Label();
-            this.uctbPPCLong = new QLDConfig1v2.ucTrackBar();
             this.lblPPCLong = new System.Windows.Forms.Label();
-            this.uctbPPCMedium = new QLDConfig1v2.ucTrackBar();
             this.lblPPCMedium = new System.Windows.Forms.Label();
-            this.uctbPPCShort = new QLDConfig1v2.ucTrackBar();
             this.lblPPCShort = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.pnlDetectStop = new System.Windows.Forms.Panel();
             this.lblDetectStopSlowCheckTimer = new System.Windows.Forms.Label();
-            this.uctbDetStopSlowCheckerTimer = new QLDConfig1v2.ucTrackBar();
             this.label22 = new System.Windows.Forms.Label();
             this.lblDetectStopTimer = new System.Windows.Forms.Label();
-            this.uctbDetStopThreshold = new QLDConfig1v2.ucTrackBar();
-            this.uctbDetStopTimer = new QLDConfig1v2.ucTrackBar();
             this.label19 = new System.Windows.Forms.Label();
             this.pnlDCDD = new System.Windows.Forms.Panel();
-            this.uctbDCDDThreshold = new QLDConfig1v2.ucTrackBar();
             this.label25 = new System.Windows.Forms.Label();
-            this.uctbDCDDTimer = new QLDConfig1v2.ucTrackBar();
             this.lblDCDDTimer = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
@@ -256,7 +228,6 @@
             this.WorstPossibleMeasurement = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MaximumErrorKMH = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MaximumErrorPercent = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.uctbSpeedDistance = new QLDConfig1v2.ucTrackBar();
             this.lblSpeedLoopDistance = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.tmrUpdateConfigPacket = new System.Windows.Forms.Timer(this.components);
@@ -305,11 +276,40 @@
             this.pnlMiscOptions = new System.Windows.Forms.Panel();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
             this.lblRuntimeRecalibTmr = new System.Windows.Forms.Label();
-            this.uctbRuntimeRecalibTmr = new QLDConfig1v2.ucTrackBar();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.lblSlowStartupTmr = new System.Windows.Forms.Label();
-            this.uctbSlowStartupTimer = new QLDConfig1v2.ucTrackBar();
             this.label35 = new System.Windows.Forms.Label();
+            this.uctbSamplingSpeed = new QLDConfig1v2.ucTrackBar();
+            this.uctbRuntimeRecalibTmr = new QLDConfig1v2.ucTrackBar();
+            this.uctbSlowStartupTimer = new QLDConfig1v2.ucTrackBar();
+            this.uctbRelayDDelayAct = new QLDConfig1v2.ucTrackBar();
+            this.uctbRelayDPulseExtended = new QLDConfig1v2.ucTrackBar();
+            this.uctbRelayDPulseNormal = new QLDConfig1v2.ucTrackBar();
+            this.uctbRelayCDelayAct = new QLDConfig1v2.ucTrackBar();
+            this.uctbRelayCPulseExtended = new QLDConfig1v2.ucTrackBar();
+            this.uctbRelayCPulseNormal = new QLDConfig1v2.ucTrackBar();
+            this.uctbRelayBDelayAct = new QLDConfig1v2.ucTrackBar();
+            this.uctbRelayBPulseExtended = new QLDConfig1v2.ucTrackBar();
+            this.uctbRelayBPulseNormal = new QLDConfig1v2.ucTrackBar();
+            this.uctbRelayADelayAct = new QLDConfig1v2.ucTrackBar();
+            this.uctbRelayAPulseExtended = new QLDConfig1v2.ucTrackBar();
+            this.uctbRelayAPulseNormal = new QLDConfig1v2.ucTrackBar();
+            this.uctbSensitivityUndetectThreshold = new QLDConfig1v2.ucTrackBar();
+            this.uctbSensitivityDetectThreshold = new QLDConfig1v2.ucTrackBar();
+            this.uctbFilteringAveraging = new QLDConfig1v2.ucTrackBar();
+            this.uctbFilteringPositive = new QLDConfig1v2.ucTrackBar();
+            this.uctbFilteringNegative = new QLDConfig1v2.ucTrackBar();
+            this.uctbDCDDThreshold = new QLDConfig1v2.ucTrackBar();
+            this.uctbDCDDTimer = new QLDConfig1v2.ucTrackBar();
+            this.uctbDetStopSlowCheckerTimer = new QLDConfig1v2.ucTrackBar();
+            this.uctbDetStopThreshold = new QLDConfig1v2.ucTrackBar();
+            this.uctbDetStopTimer = new QLDConfig1v2.ucTrackBar();
+            this.uctbSpeedDistance = new QLDConfig1v2.ucTrackBar();
+            this.uctbPPCDetLeftThreshold = new QLDConfig1v2.ucTrackBar();
+            this.uctbPPCDetLeftTimer = new QLDConfig1v2.ucTrackBar();
+            this.uctbPPCLong = new QLDConfig1v2.ucTrackBar();
+            this.uctbPPCMedium = new QLDConfig1v2.ucTrackBar();
+            this.uctbPPCShort = new QLDConfig1v2.ucTrackBar();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
@@ -1659,23 +1659,6 @@
             this.lblTmr1SamplingSpeed.Tag = "Sampling speed for each loop: % ms";
             this.lblTmr1SamplingSpeed.Text = "Sampling speed for each loop: ? ms";
             // 
-            // uctbSamplingSpeed
-            // 
-            this.uctbSamplingSpeed.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.uctbSamplingSpeed.LargeChange = 50;
-            this.uctbSamplingSpeed.Location = new System.Drawing.Point(7, 55);
-            this.uctbSamplingSpeed.Maximum = 50000;
-            this.uctbSamplingSpeed.Minimum = 12000;
-            this.uctbSamplingSpeed.Name = "uctbSamplingSpeed";
-            this.uctbSamplingSpeed.Size = new System.Drawing.Size(709, 71);
-            this.uctbSamplingSpeed.SmallChange = 10;
-            this.uctbSamplingSpeed.TabIndex = 6;
-            this.uctbSamplingSpeed.Tag = "UPDATE_CONFIG_PACKET";
-            this.uctbSamplingSpeed.TickFrequency = 100;
-            this.uctbSamplingSpeed.Value = 35000;
-            this.uctbSamplingSpeed.TrackbarChanged += new System.EventHandler(this.ucTrackBar1_TrackbarChanged);
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -1868,22 +1851,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Sensitivity bank thresholds";
             // 
-            // uctbSensitivityUndetectThreshold
-            // 
-            this.uctbSensitivityUndetectThreshold.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.uctbSensitivityUndetectThreshold.LargeChange = 5;
-            this.uctbSensitivityUndetectThreshold.Location = new System.Drawing.Point(6, 149);
-            this.uctbSensitivityUndetectThreshold.Maximum = 1000;
-            this.uctbSensitivityUndetectThreshold.Minimum = 1;
-            this.uctbSensitivityUndetectThreshold.Name = "uctbSensitivityUndetectThreshold";
-            this.uctbSensitivityUndetectThreshold.Size = new System.Drawing.Size(695, 60);
-            this.uctbSensitivityUndetectThreshold.SmallChange = 1;
-            this.uctbSensitivityUndetectThreshold.TabIndex = 2;
-            this.uctbSensitivityUndetectThreshold.Tag = "UPDATE_CONFIG_PACKET";
-            this.uctbSensitivityUndetectThreshold.TickFrequency = 10;
-            this.uctbSensitivityUndetectThreshold.Value = 1;
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -1892,22 +1859,6 @@
             this.label9.Size = new System.Drawing.Size(100, 13);
             this.label9.TabIndex = 5;
             this.label9.Text = "Undetect threshold:";
-            // 
-            // uctbSensitivityDetectThreshold
-            // 
-            this.uctbSensitivityDetectThreshold.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.uctbSensitivityDetectThreshold.LargeChange = 5;
-            this.uctbSensitivityDetectThreshold.Location = new System.Drawing.Point(6, 70);
-            this.uctbSensitivityDetectThreshold.Maximum = 1000;
-            this.uctbSensitivityDetectThreshold.Minimum = 1;
-            this.uctbSensitivityDetectThreshold.Name = "uctbSensitivityDetectThreshold";
-            this.uctbSensitivityDetectThreshold.Size = new System.Drawing.Size(695, 60);
-            this.uctbSensitivityDetectThreshold.SmallChange = 1;
-            this.uctbSensitivityDetectThreshold.TabIndex = 1;
-            this.uctbSensitivityDetectThreshold.Tag = "UPDATE_CONFIG_PACKET";
-            this.uctbSensitivityDetectThreshold.TickFrequency = 10;
-            this.uctbSensitivityDetectThreshold.Value = 1;
             // 
             // label8
             // 
@@ -1988,22 +1939,6 @@
             this.label17.TabIndex = 13;
             this.label17.Text = "Signal averaging:";
             // 
-            // uctbFilteringAveraging
-            // 
-            this.uctbFilteringAveraging.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.uctbFilteringAveraging.LargeChange = 1;
-            this.uctbFilteringAveraging.Location = new System.Drawing.Point(6, 255);
-            this.uctbFilteringAveraging.Maximum = 8;
-            this.uctbFilteringAveraging.Minimum = 1;
-            this.uctbFilteringAveraging.Name = "uctbFilteringAveraging";
-            this.uctbFilteringAveraging.Size = new System.Drawing.Size(715, 59);
-            this.uctbFilteringAveraging.SmallChange = 1;
-            this.uctbFilteringAveraging.TabIndex = 12;
-            this.uctbFilteringAveraging.Tag = "UPDATE_CONFIG_PACKET";
-            this.uctbFilteringAveraging.TickFrequency = 1;
-            this.uctbFilteringAveraging.Value = 1;
-            // 
             // lblFilteringPositive
             // 
             this.lblFilteringPositive.AutoSize = true;
@@ -2014,23 +1949,6 @@
             this.lblFilteringPositive.Tag = "Positive drift timer: % ms";
             this.lblFilteringPositive.Text = "Positive drift timer: ? ms";
             // 
-            // uctbFilteringPositive
-            // 
-            this.uctbFilteringPositive.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.uctbFilteringPositive.LargeChange = 5;
-            this.uctbFilteringPositive.Location = new System.Drawing.Point(6, 170);
-            this.uctbFilteringPositive.Maximum = 255;
-            this.uctbFilteringPositive.Minimum = 1;
-            this.uctbFilteringPositive.Name = "uctbFilteringPositive";
-            this.uctbFilteringPositive.Size = new System.Drawing.Size(715, 60);
-            this.uctbFilteringPositive.SmallChange = 1;
-            this.uctbFilteringPositive.TabIndex = 10;
-            this.uctbFilteringPositive.Tag = "TMR1BEST_CHANGE;UPDATE_CONFIG_PACKET";
-            this.uctbFilteringPositive.TickFrequency = 5;
-            this.uctbFilteringPositive.Value = 1;
-            this.uctbFilteringPositive.TrackbarChanged += new System.EventHandler(this.uctbFilteringPositive_TrackbarChanged);
-            // 
             // lblFilteringNegative
             // 
             this.lblFilteringNegative.AutoSize = true;
@@ -2040,23 +1958,6 @@
             this.lblFilteringNegative.TabIndex = 9;
             this.lblFilteringNegative.Tag = "Negative drift timer: % ms";
             this.lblFilteringNegative.Text = "Negative drift timer: ? ms";
-            // 
-            // uctbFilteringNegative
-            // 
-            this.uctbFilteringNegative.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.uctbFilteringNegative.LargeChange = 5;
-            this.uctbFilteringNegative.Location = new System.Drawing.Point(6, 86);
-            this.uctbFilteringNegative.Maximum = 255;
-            this.uctbFilteringNegative.Minimum = 1;
-            this.uctbFilteringNegative.Name = "uctbFilteringNegative";
-            this.uctbFilteringNegative.Size = new System.Drawing.Size(715, 60);
-            this.uctbFilteringNegative.SmallChange = 1;
-            this.uctbFilteringNegative.TabIndex = 8;
-            this.uctbFilteringNegative.Tag = "TMR1BEST_CHANGE;UPDATE_CONFIG_PACKET";
-            this.uctbFilteringNegative.TickFrequency = 5;
-            this.uctbFilteringNegative.Value = 1;
-            this.uctbFilteringNegative.TrackbarChanged += new System.EventHandler(this.uctbFilteringNegative_TrackbarChanged);
             // 
             // cbFilteringLevel
             // 
@@ -2146,51 +2047,6 @@
             this.lblRelayDPulseNormal.Tag = "Normal pulse duration: % ms";
             this.lblRelayDPulseNormal.Text = "Normal pulse duration: ? ms";
             // 
-            // uctbRelayDDelayAct
-            // 
-            this.uctbRelayDDelayAct.LargeChange = 5;
-            this.uctbRelayDDelayAct.Location = new System.Drawing.Point(478, 43);
-            this.uctbRelayDDelayAct.Maximum = 255;
-            this.uctbRelayDDelayAct.Minimum = 1;
-            this.uctbRelayDDelayAct.Name = "uctbRelayDDelayAct";
-            this.uctbRelayDDelayAct.Size = new System.Drawing.Size(230, 69);
-            this.uctbRelayDDelayAct.SmallChange = 1;
-            this.uctbRelayDDelayAct.TabIndex = 16;
-            this.uctbRelayDDelayAct.Tag = "UPDATE_CONFIG_PACKET";
-            this.uctbRelayDDelayAct.TickFrequency = 5;
-            this.uctbRelayDDelayAct.Value = 1;
-            this.uctbRelayDDelayAct.TrackbarChanged += new System.EventHandler(this.uctbRelayDDelayAct_TrackbarChanged);
-            // 
-            // uctbRelayDPulseExtended
-            // 
-            this.uctbRelayDPulseExtended.LargeChange = 5;
-            this.uctbRelayDPulseExtended.Location = new System.Drawing.Point(242, 43);
-            this.uctbRelayDPulseExtended.Maximum = 255;
-            this.uctbRelayDPulseExtended.Minimum = 1;
-            this.uctbRelayDPulseExtended.Name = "uctbRelayDPulseExtended";
-            this.uctbRelayDPulseExtended.Size = new System.Drawing.Size(230, 69);
-            this.uctbRelayDPulseExtended.SmallChange = 1;
-            this.uctbRelayDPulseExtended.TabIndex = 9;
-            this.uctbRelayDPulseExtended.Tag = "UPDATE_CONFIG_PACKET";
-            this.uctbRelayDPulseExtended.TickFrequency = 5;
-            this.uctbRelayDPulseExtended.Value = 1;
-            this.uctbRelayDPulseExtended.TrackbarChanged += new System.EventHandler(this.uctbRelayDPulseExtended_TrackbarChanged);
-            // 
-            // uctbRelayDPulseNormal
-            // 
-            this.uctbRelayDPulseNormal.LargeChange = 5;
-            this.uctbRelayDPulseNormal.Location = new System.Drawing.Point(6, 43);
-            this.uctbRelayDPulseNormal.Maximum = 255;
-            this.uctbRelayDPulseNormal.Minimum = 1;
-            this.uctbRelayDPulseNormal.Name = "uctbRelayDPulseNormal";
-            this.uctbRelayDPulseNormal.Size = new System.Drawing.Size(230, 69);
-            this.uctbRelayDPulseNormal.SmallChange = 1;
-            this.uctbRelayDPulseNormal.TabIndex = 7;
-            this.uctbRelayDPulseNormal.Tag = "UPDATE_CONFIG_PACKET";
-            this.uctbRelayDPulseNormal.TickFrequency = 5;
-            this.uctbRelayDPulseNormal.Value = 1;
-            this.uctbRelayDPulseNormal.TrackbarChanged += new System.EventHandler(this.uctbRelayDPulseNormal_TrackbarChanged);
-            // 
             // lblRelayDPulseExtended
             // 
             this.lblRelayDPulseExtended.AutoSize = true;
@@ -2238,51 +2094,6 @@
             this.lblRelayCPulseNormal.Tag = "Normal pulse duration: % ms";
             this.lblRelayCPulseNormal.Text = "Normal pulse duration: ? ms";
             // 
-            // uctbRelayCDelayAct
-            // 
-            this.uctbRelayCDelayAct.LargeChange = 5;
-            this.uctbRelayCDelayAct.Location = new System.Drawing.Point(478, 43);
-            this.uctbRelayCDelayAct.Maximum = 255;
-            this.uctbRelayCDelayAct.Minimum = 1;
-            this.uctbRelayCDelayAct.Name = "uctbRelayCDelayAct";
-            this.uctbRelayCDelayAct.Size = new System.Drawing.Size(230, 69);
-            this.uctbRelayCDelayAct.SmallChange = 1;
-            this.uctbRelayCDelayAct.TabIndex = 14;
-            this.uctbRelayCDelayAct.Tag = "UPDATE_CONFIG_PACKET";
-            this.uctbRelayCDelayAct.TickFrequency = 5;
-            this.uctbRelayCDelayAct.Value = 1;
-            this.uctbRelayCDelayAct.TrackbarChanged += new System.EventHandler(this.uctbRelayCDelayAct_TrackbarChanged);
-            // 
-            // uctbRelayCPulseExtended
-            // 
-            this.uctbRelayCPulseExtended.LargeChange = 5;
-            this.uctbRelayCPulseExtended.Location = new System.Drawing.Point(242, 43);
-            this.uctbRelayCPulseExtended.Maximum = 255;
-            this.uctbRelayCPulseExtended.Minimum = 1;
-            this.uctbRelayCPulseExtended.Name = "uctbRelayCPulseExtended";
-            this.uctbRelayCPulseExtended.Size = new System.Drawing.Size(230, 69);
-            this.uctbRelayCPulseExtended.SmallChange = 1;
-            this.uctbRelayCPulseExtended.TabIndex = 9;
-            this.uctbRelayCPulseExtended.Tag = "UPDATE_CONFIG_PACKET";
-            this.uctbRelayCPulseExtended.TickFrequency = 5;
-            this.uctbRelayCPulseExtended.Value = 1;
-            this.uctbRelayCPulseExtended.TrackbarChanged += new System.EventHandler(this.uctbRelayCPulseExtended_TrackbarChanged);
-            // 
-            // uctbRelayCPulseNormal
-            // 
-            this.uctbRelayCPulseNormal.LargeChange = 5;
-            this.uctbRelayCPulseNormal.Location = new System.Drawing.Point(6, 43);
-            this.uctbRelayCPulseNormal.Maximum = 255;
-            this.uctbRelayCPulseNormal.Minimum = 1;
-            this.uctbRelayCPulseNormal.Name = "uctbRelayCPulseNormal";
-            this.uctbRelayCPulseNormal.Size = new System.Drawing.Size(230, 69);
-            this.uctbRelayCPulseNormal.SmallChange = 1;
-            this.uctbRelayCPulseNormal.TabIndex = 7;
-            this.uctbRelayCPulseNormal.Tag = "UPDATE_CONFIG_PACKET";
-            this.uctbRelayCPulseNormal.TickFrequency = 5;
-            this.uctbRelayCPulseNormal.Value = 1;
-            this.uctbRelayCPulseNormal.TrackbarChanged += new System.EventHandler(this.uctbRelayCPulseNormal_TrackbarChanged);
-            // 
             // lblRelayCPulseExtended
             // 
             this.lblRelayCPulseExtended.AutoSize = true;
@@ -2320,21 +2131,6 @@
             this.lblRelayBDelayAct.Tag = "Output activation delay: % ms";
             this.lblRelayBDelayAct.Text = "Output activation delay: ? ms";
             // 
-            // uctbRelayBDelayAct
-            // 
-            this.uctbRelayBDelayAct.LargeChange = 5;
-            this.uctbRelayBDelayAct.Location = new System.Drawing.Point(478, 41);
-            this.uctbRelayBDelayAct.Maximum = 255;
-            this.uctbRelayBDelayAct.Minimum = 1;
-            this.uctbRelayBDelayAct.Name = "uctbRelayBDelayAct";
-            this.uctbRelayBDelayAct.Size = new System.Drawing.Size(230, 69);
-            this.uctbRelayBDelayAct.SmallChange = 1;
-            this.uctbRelayBDelayAct.TabIndex = 12;
-            this.uctbRelayBDelayAct.Tag = "UPDATE_CONFIG_PACKET";
-            this.uctbRelayBDelayAct.TickFrequency = 5;
-            this.uctbRelayBDelayAct.Value = 1;
-            this.uctbRelayBDelayAct.TrackbarChanged += new System.EventHandler(this.uctbRelayBDelayAct_TrackbarChanged);
-            // 
             // lblRelayBPulseNormal
             // 
             this.lblRelayBPulseNormal.AutoSize = true;
@@ -2344,36 +2140,6 @@
             this.lblRelayBPulseNormal.TabIndex = 6;
             this.lblRelayBPulseNormal.Tag = "Normal pulse duration: % ms";
             this.lblRelayBPulseNormal.Text = "Normal pulse duration: ? ms";
-            // 
-            // uctbRelayBPulseExtended
-            // 
-            this.uctbRelayBPulseExtended.LargeChange = 5;
-            this.uctbRelayBPulseExtended.Location = new System.Drawing.Point(242, 41);
-            this.uctbRelayBPulseExtended.Maximum = 255;
-            this.uctbRelayBPulseExtended.Minimum = 1;
-            this.uctbRelayBPulseExtended.Name = "uctbRelayBPulseExtended";
-            this.uctbRelayBPulseExtended.Size = new System.Drawing.Size(230, 69);
-            this.uctbRelayBPulseExtended.SmallChange = 1;
-            this.uctbRelayBPulseExtended.TabIndex = 9;
-            this.uctbRelayBPulseExtended.Tag = "UPDATE_CONFIG_PACKET";
-            this.uctbRelayBPulseExtended.TickFrequency = 5;
-            this.uctbRelayBPulseExtended.Value = 1;
-            this.uctbRelayBPulseExtended.TrackbarChanged += new System.EventHandler(this.uctbRelayBPulseExtended_TrackbarChanged);
-            // 
-            // uctbRelayBPulseNormal
-            // 
-            this.uctbRelayBPulseNormal.LargeChange = 5;
-            this.uctbRelayBPulseNormal.Location = new System.Drawing.Point(6, 43);
-            this.uctbRelayBPulseNormal.Maximum = 255;
-            this.uctbRelayBPulseNormal.Minimum = 1;
-            this.uctbRelayBPulseNormal.Name = "uctbRelayBPulseNormal";
-            this.uctbRelayBPulseNormal.Size = new System.Drawing.Size(230, 69);
-            this.uctbRelayBPulseNormal.SmallChange = 1;
-            this.uctbRelayBPulseNormal.TabIndex = 7;
-            this.uctbRelayBPulseNormal.Tag = "UPDATE_CONFIG_PACKET";
-            this.uctbRelayBPulseNormal.TickFrequency = 5;
-            this.uctbRelayBPulseNormal.Value = 1;
-            this.uctbRelayBPulseNormal.TrackbarChanged += new System.EventHandler(this.uctbRelayBPulseNormal_TrackbarChanged);
             // 
             // lblRelayBPulseExtended
             // 
@@ -2412,21 +2178,6 @@
             this.lblRelayADelayAct.Tag = "Output activation delay: % ms";
             this.lblRelayADelayAct.Text = "Output activation delay: ? ms";
             // 
-            // uctbRelayADelayAct
-            // 
-            this.uctbRelayADelayAct.LargeChange = 5;
-            this.uctbRelayADelayAct.Location = new System.Drawing.Point(478, 43);
-            this.uctbRelayADelayAct.Maximum = 255;
-            this.uctbRelayADelayAct.Minimum = 1;
-            this.uctbRelayADelayAct.Name = "uctbRelayADelayAct";
-            this.uctbRelayADelayAct.Size = new System.Drawing.Size(230, 69);
-            this.uctbRelayADelayAct.SmallChange = 1;
-            this.uctbRelayADelayAct.TabIndex = 10;
-            this.uctbRelayADelayAct.Tag = "UPDATE_CONFIG_PACKET";
-            this.uctbRelayADelayAct.TickFrequency = 5;
-            this.uctbRelayADelayAct.Value = 1;
-            this.uctbRelayADelayAct.TrackbarChanged += new System.EventHandler(this.uctbRelayADelayAct_TrackbarChanged);
-            // 
             // lblRelayAPulseNormal
             // 
             this.lblRelayAPulseNormal.AutoSize = true;
@@ -2436,36 +2187,6 @@
             this.lblRelayAPulseNormal.TabIndex = 6;
             this.lblRelayAPulseNormal.Tag = "Normal pulse duration: % ms";
             this.lblRelayAPulseNormal.Text = "Normal pulse duration: ? ms";
-            // 
-            // uctbRelayAPulseExtended
-            // 
-            this.uctbRelayAPulseExtended.LargeChange = 5;
-            this.uctbRelayAPulseExtended.Location = new System.Drawing.Point(242, 43);
-            this.uctbRelayAPulseExtended.Maximum = 255;
-            this.uctbRelayAPulseExtended.Minimum = 1;
-            this.uctbRelayAPulseExtended.Name = "uctbRelayAPulseExtended";
-            this.uctbRelayAPulseExtended.Size = new System.Drawing.Size(230, 69);
-            this.uctbRelayAPulseExtended.SmallChange = 1;
-            this.uctbRelayAPulseExtended.TabIndex = 9;
-            this.uctbRelayAPulseExtended.Tag = "UPDATE_CONFIG_PACKET";
-            this.uctbRelayAPulseExtended.TickFrequency = 5;
-            this.uctbRelayAPulseExtended.Value = 1;
-            this.uctbRelayAPulseExtended.TrackbarChanged += new System.EventHandler(this.uctbRelayAPulseExtended_TrackbarChanged);
-            // 
-            // uctbRelayAPulseNormal
-            // 
-            this.uctbRelayAPulseNormal.LargeChange = 5;
-            this.uctbRelayAPulseNormal.Location = new System.Drawing.Point(6, 43);
-            this.uctbRelayAPulseNormal.Maximum = 255;
-            this.uctbRelayAPulseNormal.Minimum = 1;
-            this.uctbRelayAPulseNormal.Name = "uctbRelayAPulseNormal";
-            this.uctbRelayAPulseNormal.Size = new System.Drawing.Size(230, 69);
-            this.uctbRelayAPulseNormal.SmallChange = 1;
-            this.uctbRelayAPulseNormal.TabIndex = 7;
-            this.uctbRelayAPulseNormal.Tag = "UPDATE_CONFIG_PACKET";
-            this.uctbRelayAPulseNormal.TickFrequency = 5;
-            this.uctbRelayAPulseNormal.Value = 1;
-            this.uctbRelayAPulseNormal.TrackbarChanged += new System.EventHandler(this.uctbRelayAPulseNormal_TrackbarChanged);
             // 
             // lblRelayAPulseExtended
             // 
@@ -2522,22 +2243,6 @@
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Detect-leave algorithm parameters";
             // 
-            // uctbPPCDetLeftThreshold
-            // 
-            this.uctbPPCDetLeftThreshold.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.uctbPPCDetLeftThreshold.LargeChange = 5;
-            this.uctbPPCDetLeftThreshold.Location = new System.Drawing.Point(8, 126);
-            this.uctbPPCDetLeftThreshold.Maximum = 255;
-            this.uctbPPCDetLeftThreshold.Minimum = 1;
-            this.uctbPPCDetLeftThreshold.Name = "uctbPPCDetLeftThreshold";
-            this.uctbPPCDetLeftThreshold.Size = new System.Drawing.Size(149, 71);
-            this.uctbPPCDetLeftThreshold.SmallChange = 1;
-            this.uctbPPCDetLeftThreshold.TabIndex = 16;
-            this.uctbPPCDetLeftThreshold.Tag = "UPDATE_CONFIG_PACKET";
-            this.uctbPPCDetLeftThreshold.TickFrequency = 5;
-            this.uctbPPCDetLeftThreshold.Value = 1;
-            // 
             // label21
             // 
             this.label21.AutoSize = true;
@@ -2547,23 +2252,6 @@
             this.label21.TabIndex = 15;
             this.label21.Tag = "Detect leave threshold:";
             this.label21.Text = "Detect leave threshold:";
-            // 
-            // uctbPPCDetLeftTimer
-            // 
-            this.uctbPPCDetLeftTimer.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.uctbPPCDetLeftTimer.LargeChange = 5;
-            this.uctbPPCDetLeftTimer.Location = new System.Drawing.Point(8, 36);
-            this.uctbPPCDetLeftTimer.Maximum = 255;
-            this.uctbPPCDetLeftTimer.Minimum = 1;
-            this.uctbPPCDetLeftTimer.Name = "uctbPPCDetLeftTimer";
-            this.uctbPPCDetLeftTimer.Size = new System.Drawing.Size(149, 70);
-            this.uctbPPCDetLeftTimer.SmallChange = 1;
-            this.uctbPPCDetLeftTimer.TabIndex = 14;
-            this.uctbPPCDetLeftTimer.Tag = "TMR1BEST_CHANGE;UPDATE_CONFIG_PACKET";
-            this.uctbPPCDetLeftTimer.TickFrequency = 5;
-            this.uctbPPCDetLeftTimer.Value = 1;
-            this.uctbPPCDetLeftTimer.TrackbarChanged += new System.EventHandler(this.uctbPPCDetLeftTimer_TrackbarChanged);
             // 
             // lblPPCDetLeaveTimer
             // 
@@ -2575,23 +2263,6 @@
             this.lblPPCDetLeaveTimer.Tag = "Detect leave timer: % ms";
             this.lblPPCDetLeaveTimer.Text = "Detect leave timer: ? ms";
             // 
-            // uctbPPCLong
-            // 
-            this.uctbPPCLong.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.uctbPPCLong.LargeChange = 5;
-            this.uctbPPCLong.Location = new System.Drawing.Point(9, 240);
-            this.uctbPPCLong.Maximum = 255;
-            this.uctbPPCLong.Minimum = 1;
-            this.uctbPPCLong.Name = "uctbPPCLong";
-            this.uctbPPCLong.Size = new System.Drawing.Size(160, 71);
-            this.uctbPPCLong.SmallChange = 1;
-            this.uctbPPCLong.TabIndex = 16;
-            this.uctbPPCLong.Tag = "UPDATE_CONFIG_PACKET";
-            this.uctbPPCLong.TickFrequency = 5;
-            this.uctbPPCLong.Value = 1;
-            this.uctbPPCLong.TrackbarChanged += new System.EventHandler(this.uctbPPCLong_TrackbarChanged);
-            // 
             // lblPPCLong
             // 
             this.lblPPCLong.AutoSize = true;
@@ -2602,23 +2273,6 @@
             this.lblPPCLong.Tag = "Permanent presence cancellation long: % (hh:mm)";
             this.lblPPCLong.Text = "Permanent presence cancellation long: ? (hh:mm)";
             // 
-            // uctbPPCMedium
-            // 
-            this.uctbPPCMedium.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.uctbPPCMedium.LargeChange = 5;
-            this.uctbPPCMedium.Location = new System.Drawing.Point(9, 149);
-            this.uctbPPCMedium.Maximum = 255;
-            this.uctbPPCMedium.Minimum = 1;
-            this.uctbPPCMedium.Name = "uctbPPCMedium";
-            this.uctbPPCMedium.Size = new System.Drawing.Size(160, 71);
-            this.uctbPPCMedium.SmallChange = 1;
-            this.uctbPPCMedium.TabIndex = 14;
-            this.uctbPPCMedium.Tag = "UPDATE_CONFIG_PACKET";
-            this.uctbPPCMedium.TickFrequency = 5;
-            this.uctbPPCMedium.Value = 1;
-            this.uctbPPCMedium.TrackbarChanged += new System.EventHandler(this.uctbPPCMedium_TrackbarChanged);
-            // 
             // lblPPCMedium
             // 
             this.lblPPCMedium.AutoSize = true;
@@ -2628,23 +2282,6 @@
             this.lblPPCMedium.TabIndex = 13;
             this.lblPPCMedium.Tag = "Permanent presence cancellation medium: % (hh:mm)";
             this.lblPPCMedium.Text = "Permanent presence cancellation medium: ? (hh:mm)";
-            // 
-            // uctbPPCShort
-            // 
-            this.uctbPPCShort.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.uctbPPCShort.LargeChange = 5;
-            this.uctbPPCShort.Location = new System.Drawing.Point(9, 58);
-            this.uctbPPCShort.Maximum = 255;
-            this.uctbPPCShort.Minimum = 1;
-            this.uctbPPCShort.Name = "uctbPPCShort";
-            this.uctbPPCShort.Size = new System.Drawing.Size(160, 71);
-            this.uctbPPCShort.SmallChange = 1;
-            this.uctbPPCShort.TabIndex = 8;
-            this.uctbPPCShort.Tag = "UPDATE_CONFIG_PACKET";
-            this.uctbPPCShort.TickFrequency = 5;
-            this.uctbPPCShort.Value = 1;
-            this.uctbPPCShort.TrackbarChanged += new System.EventHandler(this.uctbPPC_TrackbarChanged);
             // 
             // lblPPCShort
             // 
@@ -2695,23 +2332,6 @@
             this.lblDetectStopSlowCheckTimer.Tag = "Slow check timer: % ms";
             this.lblDetectStopSlowCheckTimer.Text = "Slow check timer: ? ms";
             // 
-            // uctbDetStopSlowCheckerTimer
-            // 
-            this.uctbDetStopSlowCheckerTimer.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.uctbDetStopSlowCheckerTimer.LargeChange = 5;
-            this.uctbDetStopSlowCheckerTimer.Location = new System.Drawing.Point(6, 232);
-            this.uctbDetStopSlowCheckerTimer.Maximum = 255;
-            this.uctbDetStopSlowCheckerTimer.Minimum = 1;
-            this.uctbDetStopSlowCheckerTimer.Name = "uctbDetStopSlowCheckerTimer";
-            this.uctbDetStopSlowCheckerTimer.Size = new System.Drawing.Size(155, 71);
-            this.uctbDetStopSlowCheckerTimer.SmallChange = 1;
-            this.uctbDetStopSlowCheckerTimer.TabIndex = 12;
-            this.uctbDetStopSlowCheckerTimer.Tag = "UPDATE_CONFIG_PACKET";
-            this.uctbDetStopSlowCheckerTimer.TickFrequency = 5;
-            this.uctbDetStopSlowCheckerTimer.Value = 1;
-            this.uctbDetStopSlowCheckerTimer.TrackbarChanged += new System.EventHandler(this.uctbDetStopSlowCheckerTimer_TrackbarChanged);
-            // 
             // label22
             // 
             this.label22.AutoSize = true;
@@ -2730,39 +2350,6 @@
             this.lblDetectStopTimer.TabIndex = 10;
             this.lblDetectStopTimer.Tag = "Detect stop timer: % ms";
             this.lblDetectStopTimer.Text = "Detect stop timer: ? ms";
-            // 
-            // uctbDetStopThreshold
-            // 
-            this.uctbDetStopThreshold.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.uctbDetStopThreshold.LargeChange = 5;
-            this.uctbDetStopThreshold.Location = new System.Drawing.Point(6, 141);
-            this.uctbDetStopThreshold.Maximum = 255;
-            this.uctbDetStopThreshold.Minimum = 1;
-            this.uctbDetStopThreshold.Name = "uctbDetStopThreshold";
-            this.uctbDetStopThreshold.Size = new System.Drawing.Size(155, 71);
-            this.uctbDetStopThreshold.SmallChange = 1;
-            this.uctbDetStopThreshold.TabIndex = 9;
-            this.uctbDetStopThreshold.Tag = "UPDATE_CONFIG_PACKET";
-            this.uctbDetStopThreshold.TickFrequency = 5;
-            this.uctbDetStopThreshold.Value = 1;
-            // 
-            // uctbDetStopTimer
-            // 
-            this.uctbDetStopTimer.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.uctbDetStopTimer.LargeChange = 5;
-            this.uctbDetStopTimer.Location = new System.Drawing.Point(6, 50);
-            this.uctbDetStopTimer.Maximum = 255;
-            this.uctbDetStopTimer.Minimum = 1;
-            this.uctbDetStopTimer.Name = "uctbDetStopTimer";
-            this.uctbDetStopTimer.Size = new System.Drawing.Size(155, 71);
-            this.uctbDetStopTimer.SmallChange = 1;
-            this.uctbDetStopTimer.TabIndex = 8;
-            this.uctbDetStopTimer.Tag = "TMR1BEST_CHANGE;UPDATE_CONFIG_PACKET";
-            this.uctbDetStopTimer.TickFrequency = 5;
-            this.uctbDetStopTimer.Value = 1;
-            this.uctbDetStopTimer.TrackbarChanged += new System.EventHandler(this.uctbDetStopTimer_TrackbarChanged);
             // 
             // label19
             // 
@@ -2792,22 +2379,6 @@
             this.pnlDCDD.TabIndex = 12;
             this.pnlDCDD.Tag = "7";
             // 
-            // uctbDCDDThreshold
-            // 
-            this.uctbDCDDThreshold.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.uctbDCDDThreshold.LargeChange = 5;
-            this.uctbDCDDThreshold.Location = new System.Drawing.Point(6, 148);
-            this.uctbDCDDThreshold.Maximum = 255;
-            this.uctbDCDDThreshold.Minimum = 1;
-            this.uctbDCDDThreshold.Name = "uctbDCDDThreshold";
-            this.uctbDCDDThreshold.Size = new System.Drawing.Size(143, 71);
-            this.uctbDCDDThreshold.SmallChange = 1;
-            this.uctbDCDDThreshold.TabIndex = 13;
-            this.uctbDCDDThreshold.Tag = "UPDATE_CONFIG_PACKET";
-            this.uctbDCDDThreshold.TickFrequency = 5;
-            this.uctbDCDDThreshold.Value = 1;
-            // 
             // label25
             // 
             this.label25.AutoSize = true;
@@ -2816,23 +2387,6 @@
             this.label25.Size = new System.Drawing.Size(169, 13);
             this.label25.TabIndex = 12;
             this.label25.Text = "No movement detection threshold:";
-            // 
-            // uctbDCDDTimer
-            // 
-            this.uctbDCDDTimer.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.uctbDCDDTimer.LargeChange = 5;
-            this.uctbDCDDTimer.Location = new System.Drawing.Point(6, 55);
-            this.uctbDCDDTimer.Maximum = 65535;
-            this.uctbDCDDTimer.Minimum = 1;
-            this.uctbDCDDTimer.Name = "uctbDCDDTimer";
-            this.uctbDCDDTimer.Size = new System.Drawing.Size(144, 71);
-            this.uctbDCDDTimer.SmallChange = 1;
-            this.uctbDCDDTimer.TabIndex = 11;
-            this.uctbDCDDTimer.Tag = "TMR1BEST_CHANGE;UPDATE_CONFIG_PACKET";
-            this.uctbDCDDTimer.TickFrequency = 512;
-            this.uctbDCDDTimer.Value = 1;
-            this.uctbDCDDTimer.TrackbarChanged += new System.EventHandler(this.uctbDCDDTimer_TrackbarChanged);
             // 
             // lblDCDDTimer
             // 
@@ -2939,23 +2493,6 @@
             this.MaximumErrorPercent.HeaderText = "Maximum error [%]";
             this.MaximumErrorPercent.Name = "MaximumErrorPercent";
             this.MaximumErrorPercent.ReadOnly = true;
-            // 
-            // uctbSpeedDistance
-            // 
-            this.uctbSpeedDistance.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.uctbSpeedDistance.LargeChange = 5;
-            this.uctbSpeedDistance.Location = new System.Drawing.Point(6, 58);
-            this.uctbSpeedDistance.Maximum = 1000;
-            this.uctbSpeedDistance.Minimum = 1;
-            this.uctbSpeedDistance.Name = "uctbSpeedDistance";
-            this.uctbSpeedDistance.Size = new System.Drawing.Size(715, 71);
-            this.uctbSpeedDistance.SmallChange = 1;
-            this.uctbSpeedDistance.TabIndex = 11;
-            this.uctbSpeedDistance.Tag = "UPDATE_CONFIG_PACKET;TMR1BEST_CHANGE";
-            this.uctbSpeedDistance.TickFrequency = 5;
-            this.uctbSpeedDistance.Value = 1;
-            this.uctbSpeedDistance.TrackbarChanged += new System.EventHandler(this.uctbSpeedDistance_TrackbarChanged);
             // 
             // lblSpeedLoopDistance
             // 
@@ -3503,23 +3040,6 @@
             this.lblRuntimeRecalibTmr.Tag = "Runtime recalibration timer: %";
             this.lblRuntimeRecalibTmr.Text = "Runtime recalibration timer: ?";
             // 
-            // uctbRuntimeRecalibTmr
-            // 
-            this.uctbRuntimeRecalibTmr.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.uctbRuntimeRecalibTmr.LargeChange = 5;
-            this.uctbRuntimeRecalibTmr.Location = new System.Drawing.Point(9, 47);
-            this.uctbRuntimeRecalibTmr.Maximum = 255;
-            this.uctbRuntimeRecalibTmr.Minimum = 1;
-            this.uctbRuntimeRecalibTmr.Name = "uctbRuntimeRecalibTmr";
-            this.uctbRuntimeRecalibTmr.Size = new System.Drawing.Size(694, 69);
-            this.uctbRuntimeRecalibTmr.SmallChange = 1;
-            this.uctbRuntimeRecalibTmr.TabIndex = 11;
-            this.uctbRuntimeRecalibTmr.Tag = "UPDATE_CONFIG_PACKET";
-            this.uctbRuntimeRecalibTmr.TickFrequency = 5;
-            this.uctbRuntimeRecalibTmr.Value = 1;
-            this.uctbRuntimeRecalibTmr.TrackbarChanged += new System.EventHandler(this.uctbRuntimeRecalibTmr_TrackbarChanged);
-            // 
             // groupBox9
             // 
             this.groupBox9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -3543,6 +3063,54 @@
             this.lblSlowStartupTmr.Tag = "Sensitivity increase timer: %";
             this.lblSlowStartupTmr.Text = "Sensitivity increase timer: ?";
             // 
+            // label35
+            // 
+            this.label35.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.label35.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label35.Location = new System.Drawing.Point(0, 0);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(728, 27);
+            this.label35.TabIndex = 3;
+            this.label35.Tag = "title";
+            this.label35.Text = "misc options";
+            this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // uctbSamplingSpeed
+            // 
+            this.uctbSamplingSpeed.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.uctbSamplingSpeed.LargeChange = 50;
+            this.uctbSamplingSpeed.Location = new System.Drawing.Point(7, 55);
+            this.uctbSamplingSpeed.Maximum = 50000;
+            this.uctbSamplingSpeed.Minimum = 12000;
+            this.uctbSamplingSpeed.Name = "uctbSamplingSpeed";
+            this.uctbSamplingSpeed.Size = new System.Drawing.Size(709, 71);
+            this.uctbSamplingSpeed.SmallChange = 10;
+            this.uctbSamplingSpeed.TabIndex = 6;
+            this.uctbSamplingSpeed.Tag = "UPDATE_CONFIG_PACKET";
+            this.uctbSamplingSpeed.TickFrequency = 100;
+            this.uctbSamplingSpeed.Value = 35000;
+            this.uctbSamplingSpeed.TrackbarChanged += new System.EventHandler(this.ucTrackBar1_TrackbarChanged);
+            // 
+            // uctbRuntimeRecalibTmr
+            // 
+            this.uctbRuntimeRecalibTmr.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.uctbRuntimeRecalibTmr.LargeChange = 5;
+            this.uctbRuntimeRecalibTmr.Location = new System.Drawing.Point(9, 47);
+            this.uctbRuntimeRecalibTmr.Maximum = 255;
+            this.uctbRuntimeRecalibTmr.Minimum = 1;
+            this.uctbRuntimeRecalibTmr.Name = "uctbRuntimeRecalibTmr";
+            this.uctbRuntimeRecalibTmr.Size = new System.Drawing.Size(694, 69);
+            this.uctbRuntimeRecalibTmr.SmallChange = 1;
+            this.uctbRuntimeRecalibTmr.TabIndex = 11;
+            this.uctbRuntimeRecalibTmr.Tag = "UPDATE_CONFIG_PACKET";
+            this.uctbRuntimeRecalibTmr.TickFrequency = 5;
+            this.uctbRuntimeRecalibTmr.Value = 1;
+            this.uctbRuntimeRecalibTmr.TrackbarChanged += new System.EventHandler(this.uctbRuntimeRecalibTmr_TrackbarChanged);
+            // 
             // uctbSlowStartupTimer
             // 
             this.uctbSlowStartupTimer.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -3560,35 +3128,467 @@
             this.uctbSlowStartupTimer.Value = 1;
             this.uctbSlowStartupTimer.TrackbarChanged += new System.EventHandler(this.uctbSlowStartupTimer_TrackbarChanged);
             // 
-            // label35
+            // uctbRelayDDelayAct
             // 
-            this.label35.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.label35.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label35.Location = new System.Drawing.Point(0, 0);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(728, 27);
-            this.label35.TabIndex = 3;
-            this.label35.Tag = "title";
-            this.label35.Text = "misc options";
-            this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.uctbRelayDDelayAct.LargeChange = 5;
+            this.uctbRelayDDelayAct.Location = new System.Drawing.Point(478, 43);
+            this.uctbRelayDDelayAct.Maximum = 255;
+            this.uctbRelayDDelayAct.Minimum = 1;
+            this.uctbRelayDDelayAct.Name = "uctbRelayDDelayAct";
+            this.uctbRelayDDelayAct.Size = new System.Drawing.Size(230, 69);
+            this.uctbRelayDDelayAct.SmallChange = 1;
+            this.uctbRelayDDelayAct.TabIndex = 16;
+            this.uctbRelayDDelayAct.Tag = "UPDATE_CONFIG_PACKET";
+            this.uctbRelayDDelayAct.TickFrequency = 5;
+            this.uctbRelayDDelayAct.Value = 1;
+            this.uctbRelayDDelayAct.TrackbarChanged += new System.EventHandler(this.uctbRelayDDelayAct_TrackbarChanged);
+            // 
+            // uctbRelayDPulseExtended
+            // 
+            this.uctbRelayDPulseExtended.LargeChange = 5;
+            this.uctbRelayDPulseExtended.Location = new System.Drawing.Point(242, 43);
+            this.uctbRelayDPulseExtended.Maximum = 255;
+            this.uctbRelayDPulseExtended.Minimum = 1;
+            this.uctbRelayDPulseExtended.Name = "uctbRelayDPulseExtended";
+            this.uctbRelayDPulseExtended.Size = new System.Drawing.Size(230, 69);
+            this.uctbRelayDPulseExtended.SmallChange = 1;
+            this.uctbRelayDPulseExtended.TabIndex = 9;
+            this.uctbRelayDPulseExtended.Tag = "UPDATE_CONFIG_PACKET";
+            this.uctbRelayDPulseExtended.TickFrequency = 5;
+            this.uctbRelayDPulseExtended.Value = 1;
+            this.uctbRelayDPulseExtended.TrackbarChanged += new System.EventHandler(this.uctbRelayDPulseExtended_TrackbarChanged);
+            // 
+            // uctbRelayDPulseNormal
+            // 
+            this.uctbRelayDPulseNormal.LargeChange = 5;
+            this.uctbRelayDPulseNormal.Location = new System.Drawing.Point(6, 43);
+            this.uctbRelayDPulseNormal.Maximum = 255;
+            this.uctbRelayDPulseNormal.Minimum = 1;
+            this.uctbRelayDPulseNormal.Name = "uctbRelayDPulseNormal";
+            this.uctbRelayDPulseNormal.Size = new System.Drawing.Size(230, 69);
+            this.uctbRelayDPulseNormal.SmallChange = 1;
+            this.uctbRelayDPulseNormal.TabIndex = 7;
+            this.uctbRelayDPulseNormal.Tag = "UPDATE_CONFIG_PACKET";
+            this.uctbRelayDPulseNormal.TickFrequency = 5;
+            this.uctbRelayDPulseNormal.Value = 1;
+            this.uctbRelayDPulseNormal.TrackbarChanged += new System.EventHandler(this.uctbRelayDPulseNormal_TrackbarChanged);
+            // 
+            // uctbRelayCDelayAct
+            // 
+            this.uctbRelayCDelayAct.LargeChange = 5;
+            this.uctbRelayCDelayAct.Location = new System.Drawing.Point(478, 43);
+            this.uctbRelayCDelayAct.Maximum = 255;
+            this.uctbRelayCDelayAct.Minimum = 1;
+            this.uctbRelayCDelayAct.Name = "uctbRelayCDelayAct";
+            this.uctbRelayCDelayAct.Size = new System.Drawing.Size(230, 69);
+            this.uctbRelayCDelayAct.SmallChange = 1;
+            this.uctbRelayCDelayAct.TabIndex = 14;
+            this.uctbRelayCDelayAct.Tag = "UPDATE_CONFIG_PACKET";
+            this.uctbRelayCDelayAct.TickFrequency = 5;
+            this.uctbRelayCDelayAct.Value = 1;
+            this.uctbRelayCDelayAct.TrackbarChanged += new System.EventHandler(this.uctbRelayCDelayAct_TrackbarChanged);
+            // 
+            // uctbRelayCPulseExtended
+            // 
+            this.uctbRelayCPulseExtended.LargeChange = 5;
+            this.uctbRelayCPulseExtended.Location = new System.Drawing.Point(242, 43);
+            this.uctbRelayCPulseExtended.Maximum = 255;
+            this.uctbRelayCPulseExtended.Minimum = 1;
+            this.uctbRelayCPulseExtended.Name = "uctbRelayCPulseExtended";
+            this.uctbRelayCPulseExtended.Size = new System.Drawing.Size(230, 69);
+            this.uctbRelayCPulseExtended.SmallChange = 1;
+            this.uctbRelayCPulseExtended.TabIndex = 9;
+            this.uctbRelayCPulseExtended.Tag = "UPDATE_CONFIG_PACKET";
+            this.uctbRelayCPulseExtended.TickFrequency = 5;
+            this.uctbRelayCPulseExtended.Value = 1;
+            this.uctbRelayCPulseExtended.TrackbarChanged += new System.EventHandler(this.uctbRelayCPulseExtended_TrackbarChanged);
+            // 
+            // uctbRelayCPulseNormal
+            // 
+            this.uctbRelayCPulseNormal.LargeChange = 5;
+            this.uctbRelayCPulseNormal.Location = new System.Drawing.Point(6, 43);
+            this.uctbRelayCPulseNormal.Maximum = 255;
+            this.uctbRelayCPulseNormal.Minimum = 1;
+            this.uctbRelayCPulseNormal.Name = "uctbRelayCPulseNormal";
+            this.uctbRelayCPulseNormal.Size = new System.Drawing.Size(230, 69);
+            this.uctbRelayCPulseNormal.SmallChange = 1;
+            this.uctbRelayCPulseNormal.TabIndex = 7;
+            this.uctbRelayCPulseNormal.Tag = "UPDATE_CONFIG_PACKET";
+            this.uctbRelayCPulseNormal.TickFrequency = 5;
+            this.uctbRelayCPulseNormal.Value = 1;
+            this.uctbRelayCPulseNormal.TrackbarChanged += new System.EventHandler(this.uctbRelayCPulseNormal_TrackbarChanged);
+            // 
+            // uctbRelayBDelayAct
+            // 
+            this.uctbRelayBDelayAct.LargeChange = 5;
+            this.uctbRelayBDelayAct.Location = new System.Drawing.Point(478, 41);
+            this.uctbRelayBDelayAct.Maximum = 255;
+            this.uctbRelayBDelayAct.Minimum = 1;
+            this.uctbRelayBDelayAct.Name = "uctbRelayBDelayAct";
+            this.uctbRelayBDelayAct.Size = new System.Drawing.Size(230, 69);
+            this.uctbRelayBDelayAct.SmallChange = 1;
+            this.uctbRelayBDelayAct.TabIndex = 12;
+            this.uctbRelayBDelayAct.Tag = "UPDATE_CONFIG_PACKET";
+            this.uctbRelayBDelayAct.TickFrequency = 5;
+            this.uctbRelayBDelayAct.Value = 1;
+            this.uctbRelayBDelayAct.TrackbarChanged += new System.EventHandler(this.uctbRelayBDelayAct_TrackbarChanged);
+            // 
+            // uctbRelayBPulseExtended
+            // 
+            this.uctbRelayBPulseExtended.LargeChange = 5;
+            this.uctbRelayBPulseExtended.Location = new System.Drawing.Point(242, 41);
+            this.uctbRelayBPulseExtended.Maximum = 255;
+            this.uctbRelayBPulseExtended.Minimum = 1;
+            this.uctbRelayBPulseExtended.Name = "uctbRelayBPulseExtended";
+            this.uctbRelayBPulseExtended.Size = new System.Drawing.Size(230, 69);
+            this.uctbRelayBPulseExtended.SmallChange = 1;
+            this.uctbRelayBPulseExtended.TabIndex = 9;
+            this.uctbRelayBPulseExtended.Tag = "UPDATE_CONFIG_PACKET";
+            this.uctbRelayBPulseExtended.TickFrequency = 5;
+            this.uctbRelayBPulseExtended.Value = 1;
+            this.uctbRelayBPulseExtended.TrackbarChanged += new System.EventHandler(this.uctbRelayBPulseExtended_TrackbarChanged);
+            // 
+            // uctbRelayBPulseNormal
+            // 
+            this.uctbRelayBPulseNormal.LargeChange = 5;
+            this.uctbRelayBPulseNormal.Location = new System.Drawing.Point(6, 43);
+            this.uctbRelayBPulseNormal.Maximum = 255;
+            this.uctbRelayBPulseNormal.Minimum = 1;
+            this.uctbRelayBPulseNormal.Name = "uctbRelayBPulseNormal";
+            this.uctbRelayBPulseNormal.Size = new System.Drawing.Size(230, 69);
+            this.uctbRelayBPulseNormal.SmallChange = 1;
+            this.uctbRelayBPulseNormal.TabIndex = 7;
+            this.uctbRelayBPulseNormal.Tag = "UPDATE_CONFIG_PACKET";
+            this.uctbRelayBPulseNormal.TickFrequency = 5;
+            this.uctbRelayBPulseNormal.Value = 1;
+            this.uctbRelayBPulseNormal.TrackbarChanged += new System.EventHandler(this.uctbRelayBPulseNormal_TrackbarChanged);
+            // 
+            // uctbRelayADelayAct
+            // 
+            this.uctbRelayADelayAct.LargeChange = 5;
+            this.uctbRelayADelayAct.Location = new System.Drawing.Point(478, 43);
+            this.uctbRelayADelayAct.Maximum = 255;
+            this.uctbRelayADelayAct.Minimum = 1;
+            this.uctbRelayADelayAct.Name = "uctbRelayADelayAct";
+            this.uctbRelayADelayAct.Size = new System.Drawing.Size(230, 69);
+            this.uctbRelayADelayAct.SmallChange = 1;
+            this.uctbRelayADelayAct.TabIndex = 10;
+            this.uctbRelayADelayAct.Tag = "UPDATE_CONFIG_PACKET";
+            this.uctbRelayADelayAct.TickFrequency = 5;
+            this.uctbRelayADelayAct.Value = 1;
+            this.uctbRelayADelayAct.TrackbarChanged += new System.EventHandler(this.uctbRelayADelayAct_TrackbarChanged);
+            // 
+            // uctbRelayAPulseExtended
+            // 
+            this.uctbRelayAPulseExtended.LargeChange = 5;
+            this.uctbRelayAPulseExtended.Location = new System.Drawing.Point(242, 43);
+            this.uctbRelayAPulseExtended.Maximum = 255;
+            this.uctbRelayAPulseExtended.Minimum = 1;
+            this.uctbRelayAPulseExtended.Name = "uctbRelayAPulseExtended";
+            this.uctbRelayAPulseExtended.Size = new System.Drawing.Size(230, 69);
+            this.uctbRelayAPulseExtended.SmallChange = 1;
+            this.uctbRelayAPulseExtended.TabIndex = 9;
+            this.uctbRelayAPulseExtended.Tag = "UPDATE_CONFIG_PACKET";
+            this.uctbRelayAPulseExtended.TickFrequency = 5;
+            this.uctbRelayAPulseExtended.Value = 1;
+            this.uctbRelayAPulseExtended.TrackbarChanged += new System.EventHandler(this.uctbRelayAPulseExtended_TrackbarChanged);
+            // 
+            // uctbRelayAPulseNormal
+            // 
+            this.uctbRelayAPulseNormal.LargeChange = 5;
+            this.uctbRelayAPulseNormal.Location = new System.Drawing.Point(6, 43);
+            this.uctbRelayAPulseNormal.Maximum = 255;
+            this.uctbRelayAPulseNormal.Minimum = 1;
+            this.uctbRelayAPulseNormal.Name = "uctbRelayAPulseNormal";
+            this.uctbRelayAPulseNormal.Size = new System.Drawing.Size(230, 69);
+            this.uctbRelayAPulseNormal.SmallChange = 1;
+            this.uctbRelayAPulseNormal.TabIndex = 7;
+            this.uctbRelayAPulseNormal.Tag = "UPDATE_CONFIG_PACKET";
+            this.uctbRelayAPulseNormal.TickFrequency = 5;
+            this.uctbRelayAPulseNormal.Value = 1;
+            this.uctbRelayAPulseNormal.TrackbarChanged += new System.EventHandler(this.uctbRelayAPulseNormal_TrackbarChanged);
+            // 
+            // uctbSensitivityUndetectThreshold
+            // 
+            this.uctbSensitivityUndetectThreshold.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.uctbSensitivityUndetectThreshold.LargeChange = 5;
+            this.uctbSensitivityUndetectThreshold.Location = new System.Drawing.Point(6, 149);
+            this.uctbSensitivityUndetectThreshold.Maximum = 1000;
+            this.uctbSensitivityUndetectThreshold.Minimum = 1;
+            this.uctbSensitivityUndetectThreshold.Name = "uctbSensitivityUndetectThreshold";
+            this.uctbSensitivityUndetectThreshold.Size = new System.Drawing.Size(695, 60);
+            this.uctbSensitivityUndetectThreshold.SmallChange = 1;
+            this.uctbSensitivityUndetectThreshold.TabIndex = 2;
+            this.uctbSensitivityUndetectThreshold.Tag = "UPDATE_CONFIG_PACKET";
+            this.uctbSensitivityUndetectThreshold.TickFrequency = 10;
+            this.uctbSensitivityUndetectThreshold.Value = 1;
+            // 
+            // uctbSensitivityDetectThreshold
+            // 
+            this.uctbSensitivityDetectThreshold.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.uctbSensitivityDetectThreshold.LargeChange = 5;
+            this.uctbSensitivityDetectThreshold.Location = new System.Drawing.Point(6, 70);
+            this.uctbSensitivityDetectThreshold.Maximum = 1000;
+            this.uctbSensitivityDetectThreshold.Minimum = 1;
+            this.uctbSensitivityDetectThreshold.Name = "uctbSensitivityDetectThreshold";
+            this.uctbSensitivityDetectThreshold.Size = new System.Drawing.Size(695, 60);
+            this.uctbSensitivityDetectThreshold.SmallChange = 1;
+            this.uctbSensitivityDetectThreshold.TabIndex = 1;
+            this.uctbSensitivityDetectThreshold.Tag = "UPDATE_CONFIG_PACKET";
+            this.uctbSensitivityDetectThreshold.TickFrequency = 10;
+            this.uctbSensitivityDetectThreshold.Value = 1;
+            // 
+            // uctbFilteringAveraging
+            // 
+            this.uctbFilteringAveraging.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.uctbFilteringAveraging.LargeChange = 1;
+            this.uctbFilteringAveraging.Location = new System.Drawing.Point(6, 255);
+            this.uctbFilteringAveraging.Maximum = 8;
+            this.uctbFilteringAveraging.Minimum = 1;
+            this.uctbFilteringAveraging.Name = "uctbFilteringAveraging";
+            this.uctbFilteringAveraging.Size = new System.Drawing.Size(715, 59);
+            this.uctbFilteringAveraging.SmallChange = 1;
+            this.uctbFilteringAveraging.TabIndex = 12;
+            this.uctbFilteringAveraging.Tag = "UPDATE_CONFIG_PACKET";
+            this.uctbFilteringAveraging.TickFrequency = 1;
+            this.uctbFilteringAveraging.Value = 1;
+            // 
+            // uctbFilteringPositive
+            // 
+            this.uctbFilteringPositive.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.uctbFilteringPositive.LargeChange = 5;
+            this.uctbFilteringPositive.Location = new System.Drawing.Point(6, 170);
+            this.uctbFilteringPositive.Maximum = 255;
+            this.uctbFilteringPositive.Minimum = 1;
+            this.uctbFilteringPositive.Name = "uctbFilteringPositive";
+            this.uctbFilteringPositive.Size = new System.Drawing.Size(715, 60);
+            this.uctbFilteringPositive.SmallChange = 1;
+            this.uctbFilteringPositive.TabIndex = 10;
+            this.uctbFilteringPositive.Tag = "TMR1BEST_CHANGE;UPDATE_CONFIG_PACKET";
+            this.uctbFilteringPositive.TickFrequency = 5;
+            this.uctbFilteringPositive.Value = 1;
+            this.uctbFilteringPositive.TrackbarChanged += new System.EventHandler(this.uctbFilteringPositive_TrackbarChanged);
+            // 
+            // uctbFilteringNegative
+            // 
+            this.uctbFilteringNegative.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.uctbFilteringNegative.LargeChange = 5;
+            this.uctbFilteringNegative.Location = new System.Drawing.Point(6, 86);
+            this.uctbFilteringNegative.Maximum = 255;
+            this.uctbFilteringNegative.Minimum = 1;
+            this.uctbFilteringNegative.Name = "uctbFilteringNegative";
+            this.uctbFilteringNegative.Size = new System.Drawing.Size(715, 60);
+            this.uctbFilteringNegative.SmallChange = 1;
+            this.uctbFilteringNegative.TabIndex = 8;
+            this.uctbFilteringNegative.Tag = "TMR1BEST_CHANGE;UPDATE_CONFIG_PACKET";
+            this.uctbFilteringNegative.TickFrequency = 5;
+            this.uctbFilteringNegative.Value = 1;
+            this.uctbFilteringNegative.TrackbarChanged += new System.EventHandler(this.uctbFilteringNegative_TrackbarChanged);
+            // 
+            // uctbDCDDThreshold
+            // 
+            this.uctbDCDDThreshold.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.uctbDCDDThreshold.LargeChange = 5;
+            this.uctbDCDDThreshold.Location = new System.Drawing.Point(6, 148);
+            this.uctbDCDDThreshold.Maximum = 255;
+            this.uctbDCDDThreshold.Minimum = 1;
+            this.uctbDCDDThreshold.Name = "uctbDCDDThreshold";
+            this.uctbDCDDThreshold.Size = new System.Drawing.Size(143, 71);
+            this.uctbDCDDThreshold.SmallChange = 1;
+            this.uctbDCDDThreshold.TabIndex = 13;
+            this.uctbDCDDThreshold.Tag = "UPDATE_CONFIG_PACKET";
+            this.uctbDCDDThreshold.TickFrequency = 5;
+            this.uctbDCDDThreshold.Value = 1;
+            // 
+            // uctbDCDDTimer
+            // 
+            this.uctbDCDDTimer.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.uctbDCDDTimer.LargeChange = 5;
+            this.uctbDCDDTimer.Location = new System.Drawing.Point(6, 55);
+            this.uctbDCDDTimer.Maximum = 65535;
+            this.uctbDCDDTimer.Minimum = 1;
+            this.uctbDCDDTimer.Name = "uctbDCDDTimer";
+            this.uctbDCDDTimer.Size = new System.Drawing.Size(144, 71);
+            this.uctbDCDDTimer.SmallChange = 1;
+            this.uctbDCDDTimer.TabIndex = 11;
+            this.uctbDCDDTimer.Tag = "TMR1BEST_CHANGE;UPDATE_CONFIG_PACKET";
+            this.uctbDCDDTimer.TickFrequency = 512;
+            this.uctbDCDDTimer.Value = 1;
+            this.uctbDCDDTimer.TrackbarChanged += new System.EventHandler(this.uctbDCDDTimer_TrackbarChanged);
+            // 
+            // uctbDetStopSlowCheckerTimer
+            // 
+            this.uctbDetStopSlowCheckerTimer.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.uctbDetStopSlowCheckerTimer.LargeChange = 5;
+            this.uctbDetStopSlowCheckerTimer.Location = new System.Drawing.Point(6, 232);
+            this.uctbDetStopSlowCheckerTimer.Maximum = 255;
+            this.uctbDetStopSlowCheckerTimer.Minimum = 1;
+            this.uctbDetStopSlowCheckerTimer.Name = "uctbDetStopSlowCheckerTimer";
+            this.uctbDetStopSlowCheckerTimer.Size = new System.Drawing.Size(155, 71);
+            this.uctbDetStopSlowCheckerTimer.SmallChange = 1;
+            this.uctbDetStopSlowCheckerTimer.TabIndex = 12;
+            this.uctbDetStopSlowCheckerTimer.Tag = "UPDATE_CONFIG_PACKET";
+            this.uctbDetStopSlowCheckerTimer.TickFrequency = 5;
+            this.uctbDetStopSlowCheckerTimer.Value = 1;
+            this.uctbDetStopSlowCheckerTimer.TrackbarChanged += new System.EventHandler(this.uctbDetStopSlowCheckerTimer_TrackbarChanged);
+            // 
+            // uctbDetStopThreshold
+            // 
+            this.uctbDetStopThreshold.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.uctbDetStopThreshold.LargeChange = 5;
+            this.uctbDetStopThreshold.Location = new System.Drawing.Point(6, 141);
+            this.uctbDetStopThreshold.Maximum = 255;
+            this.uctbDetStopThreshold.Minimum = 1;
+            this.uctbDetStopThreshold.Name = "uctbDetStopThreshold";
+            this.uctbDetStopThreshold.Size = new System.Drawing.Size(155, 71);
+            this.uctbDetStopThreshold.SmallChange = 1;
+            this.uctbDetStopThreshold.TabIndex = 9;
+            this.uctbDetStopThreshold.Tag = "UPDATE_CONFIG_PACKET";
+            this.uctbDetStopThreshold.TickFrequency = 5;
+            this.uctbDetStopThreshold.Value = 1;
+            // 
+            // uctbDetStopTimer
+            // 
+            this.uctbDetStopTimer.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.uctbDetStopTimer.LargeChange = 5;
+            this.uctbDetStopTimer.Location = new System.Drawing.Point(6, 50);
+            this.uctbDetStopTimer.Maximum = 255;
+            this.uctbDetStopTimer.Minimum = 1;
+            this.uctbDetStopTimer.Name = "uctbDetStopTimer";
+            this.uctbDetStopTimer.Size = new System.Drawing.Size(155, 71);
+            this.uctbDetStopTimer.SmallChange = 1;
+            this.uctbDetStopTimer.TabIndex = 8;
+            this.uctbDetStopTimer.Tag = "TMR1BEST_CHANGE;UPDATE_CONFIG_PACKET";
+            this.uctbDetStopTimer.TickFrequency = 5;
+            this.uctbDetStopTimer.Value = 1;
+            this.uctbDetStopTimer.TrackbarChanged += new System.EventHandler(this.uctbDetStopTimer_TrackbarChanged);
+            // 
+            // uctbSpeedDistance
+            // 
+            this.uctbSpeedDistance.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.uctbSpeedDistance.LargeChange = 5;
+            this.uctbSpeedDistance.Location = new System.Drawing.Point(6, 58);
+            this.uctbSpeedDistance.Maximum = 1000;
+            this.uctbSpeedDistance.Minimum = 1;
+            this.uctbSpeedDistance.Name = "uctbSpeedDistance";
+            this.uctbSpeedDistance.Size = new System.Drawing.Size(715, 71);
+            this.uctbSpeedDistance.SmallChange = 1;
+            this.uctbSpeedDistance.TabIndex = 11;
+            this.uctbSpeedDistance.Tag = "UPDATE_CONFIG_PACKET;TMR1BEST_CHANGE";
+            this.uctbSpeedDistance.TickFrequency = 5;
+            this.uctbSpeedDistance.Value = 1;
+            this.uctbSpeedDistance.TrackbarChanged += new System.EventHandler(this.uctbSpeedDistance_TrackbarChanged);
+            // 
+            // uctbPPCDetLeftThreshold
+            // 
+            this.uctbPPCDetLeftThreshold.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.uctbPPCDetLeftThreshold.LargeChange = 5;
+            this.uctbPPCDetLeftThreshold.Location = new System.Drawing.Point(8, 126);
+            this.uctbPPCDetLeftThreshold.Maximum = 255;
+            this.uctbPPCDetLeftThreshold.Minimum = 1;
+            this.uctbPPCDetLeftThreshold.Name = "uctbPPCDetLeftThreshold";
+            this.uctbPPCDetLeftThreshold.Size = new System.Drawing.Size(149, 71);
+            this.uctbPPCDetLeftThreshold.SmallChange = 1;
+            this.uctbPPCDetLeftThreshold.TabIndex = 16;
+            this.uctbPPCDetLeftThreshold.Tag = "UPDATE_CONFIG_PACKET";
+            this.uctbPPCDetLeftThreshold.TickFrequency = 5;
+            this.uctbPPCDetLeftThreshold.Value = 1;
+            // 
+            // uctbPPCDetLeftTimer
+            // 
+            this.uctbPPCDetLeftTimer.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.uctbPPCDetLeftTimer.LargeChange = 5;
+            this.uctbPPCDetLeftTimer.Location = new System.Drawing.Point(8, 36);
+            this.uctbPPCDetLeftTimer.Maximum = 255;
+            this.uctbPPCDetLeftTimer.Minimum = 1;
+            this.uctbPPCDetLeftTimer.Name = "uctbPPCDetLeftTimer";
+            this.uctbPPCDetLeftTimer.Size = new System.Drawing.Size(149, 70);
+            this.uctbPPCDetLeftTimer.SmallChange = 1;
+            this.uctbPPCDetLeftTimer.TabIndex = 14;
+            this.uctbPPCDetLeftTimer.Tag = "TMR1BEST_CHANGE;UPDATE_CONFIG_PACKET";
+            this.uctbPPCDetLeftTimer.TickFrequency = 5;
+            this.uctbPPCDetLeftTimer.Value = 1;
+            this.uctbPPCDetLeftTimer.TrackbarChanged += new System.EventHandler(this.uctbPPCDetLeftTimer_TrackbarChanged);
+            // 
+            // uctbPPCLong
+            // 
+            this.uctbPPCLong.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.uctbPPCLong.LargeChange = 5;
+            this.uctbPPCLong.Location = new System.Drawing.Point(9, 240);
+            this.uctbPPCLong.Maximum = 255;
+            this.uctbPPCLong.Minimum = 1;
+            this.uctbPPCLong.Name = "uctbPPCLong";
+            this.uctbPPCLong.Size = new System.Drawing.Size(160, 71);
+            this.uctbPPCLong.SmallChange = 1;
+            this.uctbPPCLong.TabIndex = 16;
+            this.uctbPPCLong.Tag = "UPDATE_CONFIG_PACKET";
+            this.uctbPPCLong.TickFrequency = 5;
+            this.uctbPPCLong.Value = 1;
+            this.uctbPPCLong.TrackbarChanged += new System.EventHandler(this.uctbPPCLong_TrackbarChanged);
+            // 
+            // uctbPPCMedium
+            // 
+            this.uctbPPCMedium.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.uctbPPCMedium.LargeChange = 5;
+            this.uctbPPCMedium.Location = new System.Drawing.Point(9, 149);
+            this.uctbPPCMedium.Maximum = 255;
+            this.uctbPPCMedium.Minimum = 1;
+            this.uctbPPCMedium.Name = "uctbPPCMedium";
+            this.uctbPPCMedium.Size = new System.Drawing.Size(160, 71);
+            this.uctbPPCMedium.SmallChange = 1;
+            this.uctbPPCMedium.TabIndex = 14;
+            this.uctbPPCMedium.Tag = "UPDATE_CONFIG_PACKET";
+            this.uctbPPCMedium.TickFrequency = 5;
+            this.uctbPPCMedium.Value = 1;
+            this.uctbPPCMedium.TrackbarChanged += new System.EventHandler(this.uctbPPCMedium_TrackbarChanged);
+            // 
+            // uctbPPCShort
+            // 
+            this.uctbPPCShort.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.uctbPPCShort.LargeChange = 5;
+            this.uctbPPCShort.Location = new System.Drawing.Point(9, 58);
+            this.uctbPPCShort.Maximum = 255;
+            this.uctbPPCShort.Minimum = 1;
+            this.uctbPPCShort.Name = "uctbPPCShort";
+            this.uctbPPCShort.Size = new System.Drawing.Size(160, 71);
+            this.uctbPPCShort.SmallChange = 1;
+            this.uctbPPCShort.TabIndex = 8;
+            this.uctbPPCShort.Tag = "UPDATE_CONFIG_PACKET";
+            this.uctbPPCShort.TickFrequency = 5;
+            this.uctbPPCShort.Value = 1;
+            this.uctbPPCShort.TrackbarChanged += new System.EventHandler(this.uctbPPC_TrackbarChanged);
             // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(952, 742);
+            this.Controls.Add(this.pnlOperatingMode);
+            this.Controls.Add(this.pnlSamplingSpeed);
             this.Controls.Add(this.pnlMiscOptions);
             this.Controls.Add(this.pnlEventViewer);
             this.Controls.Add(this.pnlRelayPulseDurations);
-            this.Controls.Add(this.pnlOperatingMode);
             this.Controls.Add(this.pnlSensitivity);
             this.Controls.Add(this.pnlFilteringLevels);
             this.Controls.Add(this.pnlSignalAnalysis);
             this.Controls.Add(this.pnlDCDD);
             this.Controls.Add(this.pnlDetectStop);
-            this.Controls.Add(this.pnlSamplingSpeed);
             this.Controls.Add(this.pnlSpeedTrap);
             this.Controls.Add(this.pnlPPC);
             this.Controls.Add(this.lbMenu);
